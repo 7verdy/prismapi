@@ -9,6 +9,8 @@ function getStatsFromRequest(body) {
     **   "weapon_type": "sns" | "heavy" | "daggers",
     **   "weapon": { "set_name": level (int) } | { "sword" : { "set_name": level (int) }, "shield" { "set_name": level (int) } },
     ** }
+    ** Example: curl -X POST "localhost:5000/api/stats" -H "Content-Type: application/json" -d '{ "armour" : { "adventurer" : 5 },
+    ** "helmet" : { "adventurer" : 5 }, "weapon_type" : "sns", "weapon" : { "sword" : { "adventurer" : 5 }, "shield" : { "adventurer" : 5 } } }'
     */
     let stats = {}
 
@@ -20,7 +22,7 @@ function getStatsFromRequest(body) {
     if (!armour || !helmet || !weapon_type || !weapon) {
         return null;
     }
-    
+
     const armour_set = Object.keys(armour)[0];
     const armour_level = armour[armour_set];
 
@@ -53,7 +55,6 @@ function getStatsFromRequest(body) {
     }
 
     if (weapon_type === "heavy" || weapon_type === "daggers") {
-        console.log(`Weapon type: ${weapon_type}, keys: ${Object.keys(weapon)}`);
         const data = fs.readFileSync(`equipment/weapons/heavies/${Object.keys(weapon)[0]}.json`);
         const weapon_data = JSON.parse(data);
         const weapon_level = weapon[weapon[0]];
