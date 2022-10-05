@@ -1,0 +1,90 @@
+{
+    "name": "Fury Mane",
+    "description": "Be the Alpha Dire Worlf. Fill your foes with fear!",
+    "sprites": {
+        "one-star": "#TODO",
+        "three-star": "#TODO",
+        "five-star": "#TODO"
+    },
+    "stats": [
+        {
+            "HP": 45,
+            "Atk": 0,
+            "PD": 0,
+            "RPD": 0,
+            "MD": 0,
+            "DR": 0,
+            "CR": 0,
+            "CD": 0,
+            "PDR": 0,
+            "MDR": 0,
+            "HB": 0
+        },
+        {
+            "HP": 50,
+            "Atk": 0,
+            "PD": 0,
+            "RPD": 0,
+            "MD": 0,
+            "DR": 0,
+            "CR": 0,
+            "CD": 0,
+            "PDR": 0,
+            "MDR": 0,
+            "HB": 0
+        },
+        {
+            "HP": 55,
+            "Atk": 0,
+            "PD": 0,
+            "RPD": 0,
+            "MD": 0,
+            "DR": 0,
+            "CR": 0,
+            "CD": 0,
+            "PDR": 0,
+            "MDR": 0,
+            "HB": 0
+        },
+        {
+            "HP": 60,
+            "Atk": 0,
+            "PD": 0,
+            "RPD": 0,
+            "MD": 0,
+            "DR": 0,
+            "CR": 0,
+            "CD": 0,
+            "PDR": 0,
+            "MDR": 0,
+            "HB": 0
+        },
+        {
+            "HP": 65,
+            "Atk": 0,
+            "PD": 0,
+            "RPD": 0,
+            "MD": 0,
+            "DR": 0,
+            "CR": 0,
+            "CD": 0,
+            "PDR": 0,
+            "MDR": 0,
+            "HB": 0
+        }
+    ],
+    "bonus": {
+        "HP": 0,
+        "Atk": 0,
+        "PD": 0,
+        "RPD": 0,
+        "MD": 0,
+        "DR": 0,
+        "CR": 5,
+        "CD": 0,
+        "PDR": 0,
+        "MDR": 0,
+        "HB": 0,
+        "%": true
+    }
+}
