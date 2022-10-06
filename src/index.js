@@ -16,9 +16,8 @@ app.post('/api/stats', (req, res) => {
     const body = req.body;
   
     stats = getStatsFromRequest(body);
-    console.log(JSON.stringify(stats));
     return res.status(200).json({
-        success: true
+        result: stats
     }).send();
 });
   
