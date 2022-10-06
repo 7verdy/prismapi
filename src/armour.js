@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const armourPath = `equipment/armours.json`;
 
-function addEquipment(id, body) {
+function addArmour(id, body) {
 
     let data = {};
     let equipmentId = id;
@@ -35,7 +35,7 @@ function addEquipment(id, body) {
     return data;
 }
 
-function getEquipment(id, level) {
+function getArmour(id, level) {
     const armourPath = `equipment/armours.json`;
 
     let data = {};
@@ -59,7 +59,7 @@ function getEquipment(id, level) {
     return data;
 }
 
-function removeEquipment(id) {
+function removeArmour(id) {
     const armourPath = `equipment/armours.json`;
 
     let data = {};
@@ -83,4 +83,4 @@ function removeEquipment(id) {
     return data;
 }
 
-module.exports = { addEquipment, getEquipment, removeEquipment };
+module.exports = { addArmour, getArmour, removeArmour };
