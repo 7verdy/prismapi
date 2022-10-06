@@ -50,7 +50,7 @@ app.put('/api/armour/:id', (req, res) => {
 
 app.get('/api/armour/:id/:level?', (req, res) => {
   var id = req.params['id'].toUpperCase();
-  var level = req.params['level'];
+  var level = req.params['level'] ?? 1;
 
   try {
     stats = getArmour(id)['stats'][level - 1];
