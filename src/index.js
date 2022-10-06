@@ -3,7 +3,8 @@ const app = express()
 const port = 7070
 
 const { getStatsFromRequest } = require('./utils')
-const { addEquipment, getEquipment, removeEquipment } = require('./armour')
+const { addArmour, getArmour, removeArmour } = require('./armour')
+const { calculateStats } = require('./stats')
 
 var bodyParser = require('body-parser');
 
@@ -22,11 +23,23 @@ app.post('/api/stats', (req, res) => {
   }).send();
 });
 
+app.get('/api/stats/new', (req, res) => {
+  const body = req.body;
+
+  stats = calculateStats(body);
+  return res.status(200).json({
+    result: stats
+  }).send();
+});
+
 app.put('/api/armour/:id', (req, res) => {
   const body = req.body;
   var id = req.params['id'];
 
-  stats = addEquipment(id, body);
+  if (id !== undefined)
+    id = id.toUpperCase();
+
+  stats = addArmour(id, body);
   return res.status(200).json({
     result: stats
   }).send();
@@ -37,7 +50,10 @@ app.get('/api/armour/:id/:level?', (req, res) => {
   var id = req.params['id'];
   var level = req.params['level'];
 
-  stats = getEquipment(id, level);
+  if (id !== undefined)
+    id = id.toUpperCase();
+
+  stats = getArmour(id, level);
   return res.status(200).json({
     result: stats
   }).send();
@@ -47,7 +63,10 @@ app.delete('/api/armour/:id', (req, res) => {
   const body = req.body;
   var id = req.params['id'];
 
-  stats = removeEquipment(id);
+  if (id !== undefined)
+    id = id.toUpperCase();
+
+  stats = removeArmour(id);
   return res.status(200).json({
     result: stats
   }).send();
