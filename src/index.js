@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-app.post('/api/stats', (req, res) => {
+app.get('/api/stats', (req, res) => {
   const body = req.body;
 
   stats = getStatsFromRequest(body);
@@ -26,32 +26,31 @@ app.post('/api/stats', (req, res) => {
 app.get('/api/stats/new', (req, res) => {
   const body = req.body;
 
-  stats = calculateStats(body);
-  return res.status(200).json({
-    result: stats
-  }).send();
+  try {
+    stats = calculateStats(body);
+    return res.status(200).json({
+      result: stats
+    }).send();
+  } catch (error) {
+    return res.status(404).json({
+      error: error.message
+    }).send();
+  }
 });
 
 app.put('/api/armour/:id', (req, res) => {
   const body = req.body;
-  var id = req.params['id'];
-
-  if (id !== undefined)
-    id = id.toUpperCase();
+  var id = req.params['id'].toUpperCase();
 
   stats = addArmour(id, body);
-  return res.status(200).json({
+  return res.status(201).json({
     result: stats
   }).send();
 });
 
 app.get('/api/armour/:id/:level?', (req, res) => {
-  const body = req.body;
-  var id = req.params['id'];
+  var id = req.params['id'].toUpperCase();
   var level = req.params['level'];
-
-  if (id !== undefined)
-    id = id.toUpperCase();
 
   stats = getArmour(id, level);
   return res.status(200).json({
@@ -61,10 +60,7 @@ app.get('/api/armour/:id/:level?', (req, res) => {
 
 app.delete('/api/armour/:id', (req, res) => {
   const body = req.body;
-  var id = req.params['id'];
-
-  if (id !== undefined)
-    id = id.toUpperCase();
+  var id = req.params['id'].toUpperCase();
 
   stats = removeArmour(id);
   return res.status(200).json({

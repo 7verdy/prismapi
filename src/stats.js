@@ -18,15 +18,19 @@ function calculateStats(body) {
 
     for (const key in armour) {
 
-        const armourData = getArmour(key);
-        const armourStats = armourData['stats'][armour[key] - 1];
+        try {
+            const armourData = getArmour(key);
+            const armourStats = armourData['stats'][armour[key] - 1];
 
-        for (const stat in armourStats) {
-            if (stat in stats) {
-                stats[stat] += armourStats[stat];
-            } else {
-                stats[stat] = armourStats[stat];
+            for (const stat in armourStats) {
+                if (stat in stats) {
+                    stats[stat] += armourStats[stat];
+                } else {
+                    stats[stat] = armourStats[stat];
+                }
             }
+        } catch (err) {
+            throw err;
         }
     }
 
