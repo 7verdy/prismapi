@@ -81,7 +81,7 @@ function getStatsFromRequest(body) {
 
         const sword_stats = sword_data['stats'][sword_level - 1];
         const shield_stats = shield_data['stats'][shield_level - 1];
-        
+
         for (const stat in sword_stats) {
             if (stats[stat]) {
                 stats[stat] += sword_stats[stat];
