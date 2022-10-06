@@ -2,14 +2,14 @@ const fs = require('fs');
 
 const armourPath = `equipment/armours.json`;
 
-function addEquipment(body) {
+function addEquipment(id, body) {
 
     let data = {};
+    let equipmentId = id;
 
     const fileExists = fs.existsSync(armourPath);
     if (!fileExists) {
 
-        let equipmentId = body.id;
         data[equipmentId] = body;
 
         fs.writeFile(armourPath, JSON.stringify(data, null, 4), { encoding: 'utf8', flag: 'wx' }, function (err) {
@@ -21,9 +21,6 @@ function addEquipment(body) {
 
         let armourRawData = fs.readFileSync(armourPath);
         let armourData = JSON.parse(armourRawData);
-
-        let equipmentId = body.id;
-        console.log(Array.isArray(armourData));
 
         armourData[equipmentId] = body;
 
@@ -38,7 +35,7 @@ function addEquipment(body) {
     return data;
 }
 
-function getEquipment(body) {
+function getEquipment(id, level) {
     const armourPath = `equipment/armours.json`;
 
     let data = {};
@@ -51,9 +48,9 @@ function getEquipment(body) {
     let armourRawData = fs.readFileSync(armourPath);
     let armourData = JSON.parse(armourRawData);
 
-    if (body.id !== undefined) {
-        if (armourData[body.id] !== undefined)
-            data = armourData[body.id];
+    if (id !== undefined) {
+        if (armourData[id] !== undefined)
+            data = armourData[id];
     }
     else {
         data = armourData;
@@ -62,7 +59,7 @@ function getEquipment(body) {
     return data;
 }
 
-function removeEquipment(body) {
+function removeEquipment(id) {
     const armourPath = `equipment/armours.json`;
 
     let data = {};
@@ -75,8 +72,8 @@ function removeEquipment(body) {
     let armourRawData = fs.readFileSync(armourPath);
     let armourData = JSON.parse(armourRawData);
 
-    if (armourData[body.id] !== undefined)
-        delete armourData[body.id];
+    if (armourData[id] !== undefined)
+        delete armourData[id];
 
     fs.writeFile(armourPath, JSON.stringify(armourData, null, 4), { encoding: 'utf8', flag: 'w' }, function (err) {
         if (err) throw err;

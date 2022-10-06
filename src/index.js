@@ -22,28 +22,32 @@ app.post('/api/stats', (req, res) => {
   }).send();
 });
 
-app.put('/api/armour', (req, res) => {
+app.put('/api/armour/:id', (req, res) => {
   const body = req.body;
+  var id = req.params['id'];
 
-  stats = addEquipment(body);
+  stats = addEquipment(id, body);
   return res.status(200).json({
     result: stats
   }).send();
 });
 
-app.get('/api/armour', (req, res) => {
+app.get('/api/armour/:id/:level?', (req, res) => {
   const body = req.body;
+  var id = req.params['id'];
+  var level = req.params['level'];
 
-  stats = getEquipment(body);
+  stats = getEquipment(id, level);
   return res.status(200).json({
     result: stats
   }).send();
 });
 
-app.delete('/api/armour', (req, res) => {
+app.delete('/api/armour/:id', (req, res) => {
   const body = req.body;
+  var id = req.params['id'];
 
-  stats = removeEquipment(body);
+  stats = removeEquipment(id);
   return res.status(200).json({
     result: stats
   }).send();
