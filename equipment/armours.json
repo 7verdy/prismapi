@@ -1,11 +1,11 @@
 {
-    "A1_S1_HEAD": {
-        "id": "A1_S1_HEAD",
-        "name": "Adventurer Cap",
-        "description": "It's dangerous to go alone! Wear this and stay safe!",
+    "HEAD_S1": {
+        "id": "HEAD_S1",
         "origin": "AREA_1",
         "part": "HEAD",
         "set": "SET_1",
+        "name": "Adventurer Cap",
+        "description": "It's dangerous to go alone! Wear this and stay safe!",
         "sprites": {
             "one-star": "#TODO",
             "three-star": "#TODO",
@@ -93,13 +93,13 @@
             "%": false
         }
     },
-    "A1_S2_HEAD": {
-        "id": "A1_S2_HEAD",
-        "name": "Fury Nick",
-        "description": "Hello world",
+    "HEAD_S2": {
+        "id": "HEAD_S2",
         "origin": "AREA_1",
         "part": "HEAD",
         "set": "SET_2",
+        "name": "Fury Nick",
+        "description": "Hello world",
         "sprites": {
             "one-star": "#TODO",
             "three-star": "#TODO",
