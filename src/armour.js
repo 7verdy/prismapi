@@ -35,7 +35,7 @@ function addArmour(id, body) {
     return data;
 }
 
-function getArmour(id, level) {
+function getArmour(id) {
     const armourPath = `equipment/armours.json`;
 
     let data = {};

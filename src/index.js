@@ -31,9 +31,9 @@ app.get('/api/stats/new', (req, res) => {
     return res.status(200).json({
       result: stats
     }).send();
-  } catch (error) {
+  } catch (err) {
     return res.status(404).json({
-      error: error.message
+      error: err.message
     }).send();
   }
 });
@@ -52,10 +52,16 @@ app.get('/api/armour/:id/:level?', (req, res) => {
   var id = req.params['id'].toUpperCase();
   var level = req.params['level'];
 
-  stats = getArmour(id, level);
-  return res.status(200).json({
-    result: stats
-  }).send();
+  try {
+    stats = getArmour(id)['stats'][level - 1];
+    return res.status(200).json({
+      result: stats
+    }).send();
+  } catch (err) {
+    return res.status(404).json({
+      error: err.message
+    }).send();
+  }
 });
 
 app.delete('/api/armour/:id', (req, res) => {
