@@ -1,5 +1,12 @@
 # Prism API
 
+## Install and start the project
+```console
+git clone git@github.com:7verdy/prismapi.git
+cd prismapi
+npm install
+nodemon src/index.js
+```
 
 ## Objectives / Road map
 
