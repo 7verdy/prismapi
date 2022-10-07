@@ -12,7 +12,7 @@ function addArmour(id, body) {
 
         data[equipmentId] = body;
 
-        fs.writeFile(armourPath, JSON.stringify(data, null, 4), { encoding: 'utf8', flag: 'wx' }, function (err) {
+        fs.writeFileSync(armourPath, JSON.stringify(data, null, 4), { encoding: 'utf8', flag: 'wx' }, function (err) {
             if (err) throw err;
             console.log("It's saved!");
         });
@@ -26,7 +26,7 @@ function addArmour(id, body) {
 
         data = armourData[equipmentId];
 
-        fs.writeFile(armourPath, JSON.stringify(armourData, null, 4), { encoding: 'utf8', flag: 'w' }, function (err) {
+        fs.writeFileSync(armourPath, JSON.stringify(armourData, null, 4), { encoding: 'utf8', flag: 'w' }, function (err) {
             if (err) throw err;
             console.log("It's saved!");
         });
@@ -35,7 +35,7 @@ function addArmour(id, body) {
     return data;
 }
 
-function getArmour(id, level) {
+function getArmour(id) {
     const armourPath = `equipment/armours.json`;
 
     let data = {};
@@ -48,15 +48,10 @@ function getArmour(id, level) {
     let armourRawData = fs.readFileSync(armourPath);
     let armourData = JSON.parse(armourRawData);
 
-    if (id !== undefined) {
-        if (armourData[id] !== undefined)
-            data = armourData[id];
+    if (!id || !armourData[id]) {
+        throw new Error(`${id} found`);
     }
-    else {
-        data = armourData;
-    }
-
-    return data;
+    return armourData[id];
 }
 
 function removeArmour(id) {
@@ -75,7 +70,7 @@ function removeArmour(id) {
     if (armourData[id] !== undefined)
         delete armourData[id];
 
-    fs.writeFile(armourPath, JSON.stringify(armourData, null, 4), { encoding: 'utf8', flag: 'w' }, function (err) {
+    fs.writeFileSync(armourPath, JSON.stringify(armourData, null, 4), { encoding: 'utf8', flag: 'w' }, function (err) {
         if (err) throw err;
         console.log("It's saved!");
     });

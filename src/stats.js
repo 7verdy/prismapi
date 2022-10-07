@@ -6,10 +6,9 @@ function calculateStats(body) {
     /*
     ** Body format:
     ** {
-    **   "armour": { "set_name": level (int) },
-    **   "helmet": { "set_name": level (int) },
+    **   "armour": { "BODY_..": level (int), "HEAD_.." : level (int) }
     ** }
-    ** Example: curl -X GET "localhost:7070/api/stats/new" -H "Content-Type: application/json" -d '{ "armour" : { "HEAD_S1" : 5 } }'
+    ** Example: curl -X GET "localhost:7070/api/stats/new" -H "Content-Type: application/json" -d '{ "armour" : { "BODY_S1" : 4, "HEAD_S1" : 4 } }'
     */
     let stats = getStats();
     let multiplierStats = getMultiplierStats();
@@ -18,7 +17,7 @@ function calculateStats(body) {
     const armour = body.armour; // this should include both Armoury and Helmet
     for (const key in armour) {
 
-        console.log("current armour: " + key);
+    try {
         const armourData = getArmour(key);
         const armourStats = armourData['stats'][armour[key] - 1];
 
@@ -45,6 +44,8 @@ function calculateStats(body) {
                 stats[stat] = armourStats[stat];
                 stats[stat] *= multiplierStats[stat];
             }
+        } catch (err) {
+            throw err;
         }
     }
 
