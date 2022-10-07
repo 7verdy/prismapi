@@ -3,7 +3,7 @@ const app = express()
 const port = 7070
 
 const { getStatsFromRequest } = require('./utils')
-const { addArmour, getArmour, removeArmour } = require('./armour')
+const { addEquipment, getEquipment, removeEquipment } = require('./equipment')
 const { calculateStats } = require('./stats')
 
 var bodyParser = require('body-parser');
@@ -13,6 +13,24 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(bodyParser.json());
+
+app.route("/:path?")
+  .get((req, res) => {
+    var path = req.params['path'] ?? "index";
+    var localPath = path;
+    if (!path.includes("."))
+      localPath = `${path}.html`;
+    try {
+      res.sendFile(__dirname + `/html/${localPath}`);
+    } catch (err) {
+      return res.status(404).json({
+        error: err.message
+      }).send();
+    }
+  })
+  .post((req, res) => {
+    res.redirect('/');
+  });
 
 app.get('/api/stats', (req, res) => {
   const body = req.body;
@@ -38,41 +56,45 @@ app.get('/api/stats/new', (req, res) => {
   }
 });
 
-app.put('/api/armour/:id', (req, res) => {
-  const body = req.body;
-  var id = req.params['id'].toUpperCase();
+app.route('/api/:category/:id/:level?')
+  .put((req, res) => {
+    const body = req.body;
+    var category = req.params['category'].toLowerCase();
+    var id = req.params['id'].toUpperCase();
 
-  stats = addArmour(id, body);
-  return res.status(201).json({
-    result: stats
-  }).send();
-});
+    stats = addEquipment(category, id, body);
+    return res.status(201).json({
+      result: stats
+    }).send();
+  })
 
-app.get('/api/armour/:id/:level?', (req, res) => {
-  var id = req.params['id'].toUpperCase();
-  var level = req.params['level'] ?? 1;
+  .get((req, res) => {
+    var category = req.params['category'].toLowerCase();
+    var id = req.params['id'].toUpperCase();
+    var level = req.params['level'] ?? 1;
 
-  try {
-    stats = getArmour(id)['stats'][level - 1];
+    try {
+      stats = getEquipment(category, id)['stats'][level - 1];
+      return res.status(200).json({
+        result: stats
+      }).send();
+    } catch (err) {
+      return res.status(404).json({
+        error: err.message
+      }).send();
+    }
+  })
+
+  .delete((req, res) => {
+    const body = req.body;
+    var category = req.params['category'].toLowerCase();
+    var id = req.params['id'].toUpperCase();
+
+    stats = removeEquipment(category, id);
     return res.status(200).json({
       result: stats
     }).send();
-  } catch (err) {
-    return res.status(404).json({
-      error: err.message
-    }).send();
-  }
-});
-
-app.delete('/api/armour/:id', (req, res) => {
-  const body = req.body;
-  var id = req.params['id'].toUpperCase();
-
-  stats = removeArmour(id);
-  return res.status(200).json({
-    result: stats
-  }).send();
-});
+  });
 
 
 app.listen(port, () => {

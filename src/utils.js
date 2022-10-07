@@ -9,7 +9,7 @@ function getStatsFromRequest(body) {
     **   "weapon_type": "sns" | "heavy" | "daggers",
     **   "weapon": { "set_name": level (int) } | { "sword" : { "set_name": level (int) }, "shield" { "set_name": level (int) } },
     ** }
-    ** Example: curl -X POST "localhost:5000/api/stats" -H "Content-Type: application/json" -d '{ "armour" : { "adventurer" : 5 },
+    ** Example: curl -X POST "localhost:7070/api/stats" -H "Content-Type: application/json" -d '{ "armour" : { "adventurer" : 5 },
     ** "helmet" : { "adventurer" : 5 }, "weapon_type" : "sns", "weapon" : { "sword" : { "adventurer" : 5 }, "shield" : { "adventurer" : 5 } } }'
     */
     let stats = {}
