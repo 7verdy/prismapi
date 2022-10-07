@@ -17,32 +17,33 @@ function calculateStats(body) {
     const armour = body.armour; // this should include both Armoury and Helmet
     for (const key in armour) {
 
-    try {
-        const armourData = getArmour(key);
-        const armourStats = armourData['stats'][armour[key] - 1];
+        try {
+            const armourData = getArmour(key);
+            const armourStats = armourData['stats'][armour[key] - 1];
 
-        for (const stat in armourStats) {
-            if (!stat.includes("_mul"))
-                continue;
+            for (const stat in armourStats) {
+                if (!stat.includes("_mul"))
+                    continue;
 
-            var localStat = stat.replace("_mul", "");
-            if (localStat in multiplierStats) {
-                multiplierStats[localStat] += armourStats[stat];
-            } else {
-                multiplierStats[localStat] = armourStats[stat];
+                var localStat = stat.replace("_mul", "");
+                if (localStat in multiplierStats) {
+                    multiplierStats[localStat] += armourStats[stat];
+                } else {
+                    multiplierStats[localStat] = armourStats[stat];
+                }
             }
-        }
 
-        for (const stat in armourStats) {
-            if (stat.includes("_mul"))
-                continue;
+            for (const stat in armourStats) {
+                if (stat.includes("_mul"))
+                    continue;
 
-            if (stat in stats) {
-                stats[stat] += armourStats[stat];
-                stats[stat] *= multiplierStats[stat];
-            } else {
-                stats[stat] = armourStats[stat];
-                stats[stat] *= multiplierStats[stat];
+                if (stat in stats) {
+                    stats[stat] += armourStats[stat];
+                    stats[stat] *= multiplierStats[stat];
+                } else {
+                    stats[stat] = armourStats[stat];
+                    stats[stat] *= multiplierStats[stat];
+                }
             }
         } catch (err) {
             throw err;
