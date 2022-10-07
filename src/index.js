@@ -29,7 +29,11 @@ app.route("/:path?")
     }
   })
   .post((req, res) => {
-    res.redirect('/');
+    // Catching a post request made from submitting a form
+    // from the 'front' page.
+    return res.status(202).json({
+      success: true
+    }).send();
   });
 
 app.get('/api/stats', (req, res) => {
