@@ -79,9 +79,9 @@ function getStats() {
     let stats = {
         "hit_point": 0,
         "attack": 0,
-        "physical_damage": 0,
-        "ranged_physical_damage": 0,
-        "magic_damage": 0,
+        "physical_defence": 0,
+        "ranged_physical_defence": 0,
+        "magic_defence": 0,
         "dodge_rate": 0,
         "critical_rate": 0,
         "critical_damage": 0,
@@ -97,9 +97,9 @@ function getMultiplierStats() {
     let stats = {
         "hit_point": 1,
         "attack": 1,
-        "physical_damage": 1,
-        "ranged_physical_damage": 1,
-        "magic_damage": 1,
+        "physical_defence": 1,
+        "ranged_physical_defence": 1,
+        "magic_defence": 1,
         "dodge_rate": 1,
         "critical_rate": 1,
         "critical_damage": 1,
@@ -116,4 +116,9 @@ function isFullSet(body) {
     return false;
 }
 
-module.exports = { calculateStats };
+function statsFromNameValue(name, value) {
+    // TODO
+    return {};
+}
+
+module.exports = { calculateStats, statsFromNameValue };

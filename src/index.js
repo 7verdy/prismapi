@@ -4,7 +4,7 @@ const port = 7070
 
 const { getStatsFromRequest } = require('./utils')
 const { addEquipment, getEquipment, removeEquipment } = require('./equipment')
-const { calculateStats } = require('./stats')
+const { calculateStats, statsFromNameValue } = require('./stats')
 
 var bodyParser = require('body-parser');
 
@@ -31,10 +31,41 @@ app.route("/:path?")
   .post((req, res) => {
     // Catching a post request made from submitting a form
     // from the 'front' page.
-    return res.status(202).json({
-      success: true
-    }).send();
+    if (req.body['request'] === "addEquipment") {
+
+      const category = req.body['category'].toLowerCase();
+
+      let equipment = {};
+      equipment['id'] = req.body['id'].toUpperCase();
+      equipment['origin'] = req.body['origin'].toUpperCase();
+      equipment['part'] = req.body['part'].toUpperCase();
+      equipment['set'] = req.body['set'].toUpperCase();
+      equipment['name'] = req.body['name'];
+      equipment['description'] = req.body['description'];
+      const statName = req.body['stat-name'].toLowerCase();
+      // Using parseInt() for armour and weapon stats, parseFloat() for accessories and pets.
+      const statValue = parseInt(req.body['stat-value']) ?? parseFloat(req.body['stat-value']);
+
+      equipment['stats'] = statsFromNameValue(statName, statValue);
+
+      addEquipment(category, equipment['id'], equipment);
+
+    } else if (req.body['request'] === "getEquipment") {
+
+      const category = req.body.category.toLowerCase();
+      const id = req.body.id.toUpperCase();
+      const equipment = getEquipment(category, id);
+
+      if (req.body['level'] != '')
+        equipment['stats'] = equipment['stats'][parseInt(req.body['level']) - 1];
+
+      return res.status(200).json({
+        response: equipment
+      }).send();
+
+    }
   });
+
 
 app.get('/api/stats', (req, res) => {
   const body = req.body;
