@@ -79,17 +79,17 @@
             }
         ],
         "bonus": {
-            "HP": 0,
-            "Atk": 0,
-            "PD": 0,
-            "RPD": 3,
-            "MD": 0,
-            "DR": 0,
-            "CR": 0,
-            "CD": 0,
-            "PDR": 0,
-            "MDR": 0,
-            "HB": 0,
+            "hit_point": 0,
+            "attack": 0,
+            "physical_defence": 0,
+            "ranged_physical_defence": 3,
+            "magic_defence": 0,
+            "dodge_rate": 0,
+            "critical_rate": 0,
+            "critical_damage": 0,
+            "physical_damage_reduction": 0,
+            "magic_damage_reduction": 0,
+            "healing_bonus": 0,
             "%": false
         }
     }
