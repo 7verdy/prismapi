@@ -116,9 +116,17 @@ function isFullSet(body) {
     return false;
 }
 
-function statsFromNameValue(name, value) {
-    // TODO
-    return {};
+function statsFromNameValue(name, values) {
+    let stats = [];
+    let valuesArray = values.split(' ');
+    for (let i = 0; i < valuesArray.length; i++) {
+        let stat = {};
+        let integer = parseInt(valuesArray[i]);
+        let float = parseFloat(valuesArray[i]);
+        stat[name] = float > integer ? float : integer;
+        stats.push(stat);
+    }
+    return stats;
 }
 
 module.exports = { calculateStats, statsFromNameValue };

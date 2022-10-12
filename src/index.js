@@ -42,13 +42,17 @@ app.route("/:path?")
       equipment['set'] = req.body['set'].toUpperCase();
       equipment['name'] = req.body['name'];
       equipment['description'] = req.body['description'];
-      const statName = req.body['stat-name'].toLowerCase();
-      // Using parseInt() for armour and weapon stats, parseFloat() for accessories and pets.
-      const statValue = parseInt(req.body['stat-value']) ?? parseFloat(req.body['stat-value']);
 
-      equipment['stats'] = statsFromNameValue(statName, statValue);
+      const statName = req.body['stat-name'].toLowerCase();
+      const statValues = req.body['stat-value'];
+
+      equipment['stats'] = statsFromNameValue(statName, statValues);
 
       addEquipment(category, equipment['id'], equipment);
+
+      return res.status(200).json({
+        message: "Equipment added successfully!"
+      }).send();
 
     } else if (req.body['request'] === "getEquipment") {
 
