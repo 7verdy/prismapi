@@ -129,4 +129,17 @@ function statsFromNameValue(name, values) {
     return stats;
 }
 
-module.exports = { calculateStats, statsFromNameValue };
+function getSet(origin, set) {
+    let armoursData = fs.readFileSync('equipment/armours.json');
+    let armours = JSON.parse(armoursData);
+    /* iterate in the keys of armours */
+    let res = {};
+    for (const key in armours) {
+        if (armours[key].origin === origin && armours[key].set === set) {
+            res.key = armours[key];
+        }
+    }
+    return res;
+}
+
+module.exports = { calculateStats, statsFromNameValue,  getSet };

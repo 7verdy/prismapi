@@ -4,7 +4,7 @@ const port = 7070
 
 const { getStatsFromRequest } = require('./utils')
 const { addEquipment, getEquipment, removeEquipment } = require('./equipment')
-const { calculateStats, statsFromNameValue } = require('./stats')
+const { calculateStats, statsFromNameValue, getSet } = require('./stats')
 
 var bodyParser = require('body-parser');
 
@@ -13,6 +13,36 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(bodyParser.json());
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "http://127.0.0.1:5173");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+
+app.get('/api/areas', (req, res) => {
+  let areas = {
+    "areas": [
+      "Maille",
+      "Pompon",
+      "Caldemount",
+      "Violetfair",
+      "Aldor",
+      "Sagacia",
+      "Regalle"
+    ]
+  }
+  res.setHeader('Content-Type', 'application/json');
+  return res.status(200).json(areas).send();
+});
+
+app.get('/api/sets', (req, res) => {
+  let sets = {}
+  sets['AREA_1'] = {};
+  sets['AREA_1']['SET_1'] = getSet('AREA_1', 'SET_1');
+  return res.status(200).json(sets).send();
+});
 
 app.route("/:path?")
   .get((req, res) => {
