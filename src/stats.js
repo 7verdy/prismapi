@@ -132,7 +132,6 @@ function statsFromNameValue(name, values) {
 function getSet(origin, set) {
     let armoursData = fs.readFileSync('equipment/armours.json');
     let armours = JSON.parse(armoursData);
-    /* iterate in the keys of armours */
     let res = {};
     for (const key in armours) {
         if (armours[key].origin === origin && armours[key].set === set) {
@@ -142,4 +141,17 @@ function getSet(origin, set) {
     return res;
 }
 
-module.exports = { calculateStats, statsFromNameValue,  getSet };
+function getAllSets() {
+    let armoursData = fs.readFileSync('equipment/armours.json');
+    let armours = JSON.parse(armoursData);
+    let res = {};
+    for (const key in armours) {
+        if (!(armours[key].origin in res)) {
+            res[armours[key].origin] = {};
+        }
+        res[armours[key].origin][armours[key].set] = armours[key];
+    }
+    return res;
+}
+
+module.exports = { calculateStats, statsFromNameValue,  getSet, getAllSets };
