@@ -130,7 +130,7 @@ function statsFromNameValue(name, values) {
 }
 
 function getSet(origin, set) {
-    let armoursData = fs.readFileSync('equipment/armours.json');
+    let armoursData = fs.readFileSync('data/armours.json');
     let armours = JSON.parse(armoursData);
     let res = {};
     for (const key in armours) {
@@ -142,7 +142,7 @@ function getSet(origin, set) {
 }
 
 function getAllSets() {
-    let armoursData = fs.readFileSync('equipment/armours.json');
+    let armoursData = fs.readFileSync('data/armours.json');
     let armours = JSON.parse(armoursData);
     let res = {};
     for (const key in armours) {

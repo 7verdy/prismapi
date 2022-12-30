@@ -31,6 +31,7 @@
         <form method="post">
 
             <div class="inputs addEquipment hidden">
+                <span>Both area and set are waiting for a number, starting from 1</span>
                 <input type="hidden" name="request" value="addEquipment">
                 <select name="category">
                     <option>--- category ---</option>
@@ -38,8 +39,7 @@
                     <option>Weapons</option>
                     <option>Accessories</option>
                 </select>
-                <input name="id" placeholder="id">
-                <input name="origin" placeholder="origin">
+                <input name="area" placeholder="area">
                 <input name="part" placeholder="part">
                 <input name="set" placeholder="set">
                 <input name="name" placeholder="name">
@@ -58,6 +58,20 @@
                     <option name="healing_bonus">Healing Bonus</option>
                 </select>
                 <input name="stat-value" placeholder="stat value">
+                <select name="hidden-stat-name">
+                    <option>--- stat name ---</option>
+                    <option name="hit_point">Maximum Health</option>
+                    <option name="attack">Attack</option>
+                    <option name="physical_defence">Physical Defence</option>
+                    <option name="ranged_physical_defence">Ranged Physical Defence</option>
+                    <option name="magic_defence">Magic Defence</option>
+                    <option name="dodge_rate">Dodge Rate</option>
+                    <option name="critical_rate">Critical Rate</option>
+                    <option name="physical_damage_reduction">Physical Damage Reduction</option>
+                    <option name="magic_damage_reduction">Magic Damage Reduction</option>
+                    <option name="healing_bonus">Healing Bonus</option>
+                </select>
+                <input name="hidden-stats-value" placeholder="hidden stat value">
                 <button type="submit">Submit</button>
             </div>
         </form>

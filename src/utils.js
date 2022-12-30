@@ -29,8 +29,8 @@ function getStatsFromRequest(body) {
     const helmet_set = Object.keys(helmet)[0];
     const helmet_level = helmet[helmet_set];
 
-    const armourFile = fs.readFileSync(`equipment/armours/${armour_set}.json`);
-    const helmetFile = fs.readFileSync(`equipment/helmets/${helmet_set}.json`);
+    const armourFile = fs.readFileSync(`data/armours/${armour_set}.json`);
+    const helmetFile = fs.readFileSync(`data/helmets/${helmet_set}.json`);
 
     const armourData = JSON.parse(armourFile);
     const helmetData = JSON.parse(helmetFile);
@@ -55,7 +55,7 @@ function getStatsFromRequest(body) {
     }
 
     if (weapon_type === "heavy" || weapon_type === "daggers") {
-        const data = fs.readFileSync(`equipment/weapons/heavies/${Object.keys(weapon)[0]}.json`);
+        const data = fs.readFileSync(`data/weapons/heavies/${Object.keys(weapon)[0]}.json`);
         const weapon_data = JSON.parse(data);
         const weapon_level = weapon[weapon[0]];
         const weapon_stats = weapon_data['stats'][weapon_level];
@@ -70,8 +70,8 @@ function getStatsFromRequest(body) {
         const sword_set = Object.keys(weapon.sword)[0];
         const shield_set = Object.keys(weapon.shield)[0];
 
-        const sword = fs.readFileSync(`equipment/weapons/swords/${sword_set}.json`);
-        const shield = fs.readFileSync(`equipment/weapons/shields/${shield_set}.json`);
+        const sword = fs.readFileSync(`data/weapons/swords/${sword_set}.json`);
+        const shield = fs.readFileSync(`data/weapons/shields/${shield_set}.json`);
 
         const sword_data = JSON.parse(sword);
         const shield_data = JSON.parse(shield);
@@ -101,4 +101,11 @@ function getStatsFromRequest(body) {
     return stats;
 }
 
-module.exports = { getStatsFromRequest };
+function setOriginAndSet(body) {
+    body['origin'] = `AREA_${body['area']}`;
+    delete body['area'];
+    body['id'] = `${body['part']}_S${body['set']}`;
+    body['set'] = `SET_${body['set']}`;
+}
+
+module.exports = { getStatsFromRequest, setOriginAndSet };

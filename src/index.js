@@ -64,8 +64,7 @@ app.route("/:path?")
       const category = req.body['category'].toLowerCase();
 
       let equipment = {};
-      equipment['id'] = req.body['id'].toUpperCase();
-      equipment['origin'] = req.body['origin'].toUpperCase();
+      equipment['area'] = req.body['area'].toLowerCase();
       equipment['part'] = req.body['part'].toUpperCase();
       equipment['set'] = req.body['set'].toUpperCase();
       equipment['name'] = req.body['name'];
@@ -73,10 +72,15 @@ app.route("/:path?")
 
       const statName = req.body['stat-name'].toLowerCase();
       const statValues = req.body['stat-value'];
-
       equipment['stats'] = statsFromNameValue(statName, statValues);
+      // console.log(req.body);
+      if (req.body['hidden-stats-value'] != '') {
+        const hiddenStatName = req.body['hidden-stat-name'].toLowerCase();
+        const hiddenStatValues = req.body['hidden-stats-value'];
+        equipment['hidden-stats'] = statsFromNameValue(hiddenStatName, hiddenStatValues);
+      }
 
-      addEquipment(category, equipment['id'], equipment);
+      addEquipment(category, equipment);
 
       return res.status(200).json({
         message: "Equipment added successfully!"

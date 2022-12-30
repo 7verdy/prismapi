@@ -1,10 +1,13 @@
 const fs = require('fs');
 
-function addEquipment(category, id, body) {
-    const filePath = `equipment/${category}.json`;
+const { setOriginAndSet } = require('./utils');
 
+function addEquipment(category, body) {
+    const filePath = `data/${category}.json`;
+    setOriginAndSet(body);
     let data = {};
-    let equipmentId = id;
+    let equipmentId = body['id'];
+    delete body['id'];
 
     const fileExists = fs.existsSync(filePath);
     if (!fileExists) {
@@ -21,6 +24,7 @@ function addEquipment(category, id, body) {
         let equipmentRawData = fs.readFileSync(filePath);
         let equipmentData = JSON.parse(equipmentRawData);
 
+
         equipmentData[equipmentId] = body;
 
         data = equipmentData[equipmentId];
@@ -35,7 +39,7 @@ function addEquipment(category, id, body) {
 }
 
 function getEquipment(category, id) {
-    const filePath = `equipment/${category}.json`;
+    const filePath = `data/${category}.json`;
 
     let data = {};
 
@@ -54,7 +58,7 @@ function getEquipment(category, id) {
 }
 
 function removeEquipment(category, id) {
-    const filePath = `equipment/${category}.json`;
+    const filePath = `data/${category}.json`;
 
     let data = {};
 
