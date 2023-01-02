@@ -17,8 +17,8 @@ select {
     padding: 1em 0;
 }
 
-.inputs > input, .inputs select {
-    margin-top: 1em;
+.inputs>input,
+.inputs select {
     width: inherit;
 }
 
@@ -29,4 +29,36 @@ select {
 
 .hidden {
     display: none;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    margin-top: 1em;
+}
+
+.main-stat,
+.hidden-stat {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bonus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+select[name="category"] {
+    margin-bottom: 1rem;
+}
+
+textarea {
+    width: 100%;
 }

@@ -40,40 +40,45 @@
                     <option>Accessories</option>
                 </select>
                 <input name="area" placeholder="area">
-                <input name="part" placeholder="part">
                 <input name="set" placeholder="set">
+                <input name="part" placeholder="part">
                 <input name="name" placeholder="name">
-                <input name="description" placeholder="description">
-                <select name="stat-name">
-                    <option>--- stat name ---</option>
-                    <option name="hit_point">Maximum Health</option>
-                    <option name="attack">Attack</option>
-                    <option name="physical_defence">Physical Defence</option>
-                    <option name="ranged_physical_defence">Ranged Physical Defence</option>
-                    <option name="magic_defence">Magic Defence</option>
-                    <option name="dodge_rate">Dodge Rate</option>
-                    <option name="critical_rate">Critical Rate</option>
-                    <option name="physical_damage_reduction">Physical Damage Reduction</option>
-                    <option name="magic_damage_reduction">Magic Damage Reduction</option>
-                    <option name="healing_bonus">Healing Bonus</option>
-                </select>
-                <input name="stat-value" placeholder="stat value">
-                <select name="hidden-stat-name">
-                    <option>--- stat name ---</option>
-                    <option name="hit_point">Maximum Health</option>
-                    <option name="attack">Attack</option>
-                    <option name="physical_defence">Physical Defence</option>
-                    <option name="ranged_physical_defence">Ranged Physical Defence</option>
-                    <option name="magic_defence">Magic Defence</option>
-                    <option name="dodge_rate">Dodge Rate</option>
-                    <option name="critical_rate">Critical Rate</option>
-                    <option name="physical_damage_reduction">Physical Damage Reduction</option>
-                    <option name="magic_damage_reduction">Magic Damage Reduction</option>
-                    <option name="healing_bonus">Healing Bonus</option>
-                </select>
+                <textarea name="description" placeholder="description"></textarea>
+                <div class="main-stat">
+                    <select name="stat-name">
+                        <option>--- main stat name ---</option>
+                        <option name="hit_point">Maximum Health</option>
+                        <option name="attack">Attack</option>
+                        <option name="physical_defence">Physical Defence</option>
+                        <option name="ranged_physical_defence">Ranged Physical Defence</option>
+                        <option name="magic_defence">Magic Defence</option>
+                        <option name="dodge_rate">Dodge Rate</option>
+                        <option name="critical_rate">Critical Rate</option>
+                        <option name="physical_damage_reduction">Physical Damage Reduction</option>
+                        <option name="magic_damage_reduction">Magic Damage Reduction</option>
+                        <option name="healing_bonus">Healing Bonus</option>
+                    </select>
+                    <input name="stat-value" placeholder="stat value">
+                </div>
+                <div class="hidden-stat">
+                    <select name="hidden-stat-name">
+                        <option>--- hidden stat name ---</option>
+                        <option name="hit_point">Maximum Health</option>
+                        <option name="attack">Attack</option>
+                        <option name="physical_defence">Physical Defence</option>
+                        <option name="ranged_physical_defence">Ranged Physical Defence</option>
+                        <option name="magic_defence">Magic Defence</option>
+                        <option name="dodge_rate">Dodge Rate</option>
+                        <option name="critical_rate">Critical Rate</option>
+                        <option name="physical_damage_reduction">Physical Damage Reduction</option>
+                        <option name="magic_damage_reduction">Magic Damage Reduction</option>
+                        <option name="healing_bonus">Healing Bonus</option>
+                    </select>
+                    <input name="hidden-stats-value" placeholder="hidden stats">
+                </div>
                 <div class="bonus">
                     <select name="bonus-stat-name">
-                        <option>--- stat name ---</option>
+                        <option>--- 5* bonus stat name ---</option>
                         <option name="hit_point">Maximum Health</option>
                         <option name="attack">Attack</option>
                         <option name="physical_defence">Physical Defence</option>
@@ -86,14 +91,14 @@
                         <option name="healing_bonus">Healing Bonus</option>
                     </select>
                     <input name="bonus-stats-value" placeholder="bonus stats">
+                    <input name="hidden-stats-value" placeholder="hidden stat value">
                     <select name="bonus-percentage">
-                        <option>--- percentage ---</option>
+                        <option>--- is a percentage? ---</option>
                         <option name="true">true</option>
                         <option name="false">false</option>
                     </select>
-                    <input name="hidden-stats-value" placeholder="hidden stat value">
-                    <button type="submit">Submit</button>
                 </div>
+                <button type="submit">Submit</button>
         </form>
 
         <form method="post">
