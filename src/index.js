@@ -73,7 +73,11 @@ app.route("/:path?")
       const statName = req.body['stat-name'].toLowerCase();
       const statValues = req.body['stat-value'];
       equipment['stats'] = statsFromNameValue(statName, statValues);
-      // console.log(req.body);
+
+      const bonusName = req.body['bonus-stat-name'].toLowerCase();
+      const bonusValues = req.body['bonus-stats-value'];
+      equipment['bonus'] = statsFromNameValue(bonusName, bonusValues);
+
       if (req.body['hidden-stats-value'] != '') {
         const hiddenStatName = req.body['hidden-stat-name'].toLowerCase();
         const hiddenStatValues = req.body['hidden-stats-value'];

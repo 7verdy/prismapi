@@ -71,9 +71,29 @@
                     <option name="magic_damage_reduction">Magic Damage Reduction</option>
                     <option name="healing_bonus">Healing Bonus</option>
                 </select>
-                <input name="hidden-stats-value" placeholder="hidden stat value">
-                <button type="submit">Submit</button>
-            </div>
+                <div class="bonus">
+                    <select name="bonus-stat-name">
+                        <option>--- stat name ---</option>
+                        <option name="hit_point">Maximum Health</option>
+                        <option name="attack">Attack</option>
+                        <option name="physical_defence">Physical Defence</option>
+                        <option name="ranged_physical_defence">Ranged Physical Defence</option>
+                        <option name="magic_defence">Magic Defence</option>
+                        <option name="dodge_rate">Dodge Rate</option>
+                        <option name="critical_rate">Critical Rate</option>
+                        <option name="physical_damage_reduction">Physical Damage Reduction</option>
+                        <option name="magic_damage_reduction">Magic Damage Reduction</option>
+                        <option name="healing_bonus">Healing Bonus</option>
+                    </select>
+                    <input name="bonus-stats-value" placeholder="bonus stats">
+                    <select name="bonus-percentage">
+                        <option>--- percentage ---</option>
+                        <option name="true">true</option>
+                        <option name="false">false</option>
+                    </select>
+                    <input name="hidden-stats-value" placeholder="hidden stat value">
+                    <button type="submit">Submit</button>
+                </div>
         </form>
 
         <form method="post">
