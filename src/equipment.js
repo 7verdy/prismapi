@@ -11,27 +11,16 @@ function addEquipment(category, body) {
 
     const fileExists = fs.existsSync(filePath);
     if (!fileExists) {
-
         data[equipmentId] = body;
-
-        fs.writeFileSync(filePath, JSON.stringify(data, null, 4), { encoding: 'utf8', flag: 'wx' }, function (err) {
-            if (err) throw err;
-            console.log("It's saved!");
+        fs.writeFileSync(filePath, JSON.stringify(data, null, 4), { encoding: 'utf8', flag: 'w' }, function (err) {
+            // if (err) throw err;
         });
-    }
-    else {
-
-        let equipmentRawData = fs.readFileSync(filePath);
-        let equipmentData = JSON.parse(equipmentRawData);
-
-
-        equipmentData[equipmentId] = body;
-
-        data = equipmentData[equipmentId];
-
-        fs.writeFileSync(filePath, JSON.stringify(equipmentData, null, 4), { encoding: 'utf8', flag: 'w' }, function (err) {
+    } else {
+        let rawData = fs.readFileSync(filePath);
+        data = JSON.parse(rawData);
+        data[equipmentId] = body;
+        fs.writeFileSync(filePath, JSON.stringify(data, null, 4), { encoding: 'utf8', flag: 'w' }, function (err) {
             if (err) throw err;
-            console.log("It's saved!");
         });
     }
 
