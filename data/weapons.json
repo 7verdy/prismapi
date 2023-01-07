@@ -1,0 +1,86 @@
+{
+    "SWORD_S1": {
+        "part": "SWORD",
+        "set": "SET_1",
+        "name": "Adventurer Sword",
+        "description": "It's dangerous to go alone! Take this and charge on!",
+        "stats": [
+            {
+                "attack": 8
+            },
+            {
+                "attack": 9
+            },
+            {
+                "attack": 10
+            },
+            {
+                "attack": 11
+            },
+            {
+                "attack": 12
+            }
+        ],
+        "bonus": {
+            "maximum health": 5,
+            "percent": true
+        },
+        "origin": "AREA_1"
+    },
+    "SHIELD_S1": {
+        "part": "SHIELD",
+        "set": "SET_1",
+        "name": "Adventurer Shield",
+        "description": "It's dangerous to go alone! Take this and shield away!",
+        "stats": [
+            {
+                "ranged physical defence": 8
+            },
+            {
+                "ranged physical defence": 9
+            },
+            {
+                "ranged physical defence": 10
+            },
+            {
+                "ranged physical defence": 11
+            },
+            {
+                "ranged physical defence": 12
+            }
+        ],
+        "bonus": {
+            "maximum health": "5",
+            "percent": true
+        },
+        "origin": "AREA_1"
+    },
+    "DAGGERS_S2": {
+        "part": "DAGGERS",
+        "set": "SET_2",
+        "name": "Fury Daggers",
+        "description": "Be the Alpha Dire Wolf.\r\nWield your ferocious fangs!",
+        "stats": [
+            {
+                "attack": 7
+            },
+            {
+                "attack": 8
+            },
+            {
+                "attack": 9
+            },
+            {
+                "attack": 10
+            },
+            {
+                "attack": 11
+            }
+        ],
+        "bonus": {
+            "critical damage": "10",
+            "percent": true
+        },
+        "origin": "AREA_1"
+    }
+}

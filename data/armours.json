@@ -1,0 +1,148 @@
+{
+  "HEAD_S1": {
+    "part": "HEAD",
+    "set": "SET_1",
+    "name": "Adventurer Cap",
+    "description": "It's dangerous to go alone! Wear this and stay safe!",
+    "stats": [
+      {
+        "maximum health": 40
+      },
+      {
+        "maximum health": 45
+      },
+      {
+        "maximum health": 50
+      },
+      {
+        "maximum health": 55
+      },
+      {
+        "maximum health": 60
+      }
+    ],
+    "hidden-stats": [
+      {
+        "ranged physical defence": 2
+      },
+      {
+        "ranged physical defence": 2
+      },
+      {
+        "ranged physical defence": 3
+      },
+      {
+        "ranged physical defence": 3
+      },
+      {
+        "ranged physical defence": 3
+      }
+    ],
+    "bonus": {
+      "ranged physical defence": 3,
+      "percent": false
+    },
+    "origin": "AREA_1"
+  },
+  "BODY_S1": {
+    "part": "BODY",
+    "set": "SET_1",
+    "name": "Adventurer Armour",
+    "description": "It's dangerous to go alone! Wear this and live long!",
+    "stats": [
+      {
+        "physical defence": 8
+      },
+      {
+        "physical defence": 9
+      },
+      {
+        "physical defence": 10
+      },
+      {
+        "physical defence": 11
+      },
+      {
+        "physical defence": 12
+      }
+    ],
+    "bonus": {
+      "maximum health": 5,
+      "percent": true
+    },
+    "origin": "AREA_1"
+  },
+  "HEAD_S2": {
+    "part": "HEAD",
+    "set": "SET_2",
+    "name": "Fury Mane",
+    "description": "Be the Alpha Dire Wolf.\r\nFill your foes with fear!",
+    "stats": [
+      {
+        "maximum health": 45
+      },
+      {
+        "maximum health": 50
+      },
+      {
+        "maximum health": 55
+      },
+      {
+        "maximum health": 60
+      },
+      {
+        "maximum health": 65
+      }
+    ],
+    "bonus": {
+      "critical rate": "5",
+      "percent": true
+    },
+    "origin": "AREA_1"
+  },
+  "BODY_S2": {
+    "part": "BODY",
+    "set": "SET_2",
+    "name": "Fury Suit",
+    "description": "Be the Alpha Dire Wolf.\r\nRemain unruffled by nature!",
+    "stats": [
+      {
+        "physical defence": 9
+      },
+      {
+        "physical defence": 10
+      },
+      {
+        "physical defence": 11
+      },
+      {
+        "physical defence": 12
+      },
+      {
+        "physical defence": 13
+      }
+    ],
+    "bonus": {
+      "physical defence": "3",
+      "percent": false
+    },
+    "hidden-stats": [
+      {
+        "ranged physical defence": 2
+      },
+      {
+        "ranged physical defence": 3
+      },
+      {
+        "ranged physical defence": 3
+      },
+      {
+        "ranged physical defence": 3
+      },
+      {
+        "ranged physical defence": 3
+      }
+    ],
+    "origin": "AREA_1"
+  }
+}
