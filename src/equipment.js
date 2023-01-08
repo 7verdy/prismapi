@@ -73,7 +73,7 @@ function removeEquipment(category, id) {
 function getEveryGear() {
     let data = [];
     let dataFolder = 'data';
-    let dateFiles = fs.readdirSync(dataFolder);
+    let dateFiles = [ 'armours.json', 'weapons.json' ];
     for (let file of dateFiles) {
         let rawData = fs.readFileSync(`${dataFolder}/${file}`);
         let fileData = JSON.parse(rawData);
