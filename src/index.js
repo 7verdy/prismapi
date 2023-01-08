@@ -3,7 +3,7 @@ const app = express()
 const port = 7070
 
 const { getStatsFromRequest } = require('./utils')
-const { addEquipment, getEquipment, removeEquipment } = require('./equipment')
+const { addEquipment, getEquipment, removeEquipment, getEveryGear } = require('./equipment')
 const { calculateStats, statsFromNameValue, getSet, getAllSets } = require('./stats')
 
 var bodyParser = require('body-parser');
@@ -40,6 +40,13 @@ app.get('/api/areas', (req, res) => {
 app.get('/api/sets', (req, res) => {
   let sets = getAllSets();
   return res.status(200).json(sets).send();
+});
+
+app.get('/api/gears', (req, res) => {
+  console.log(getEveryGear());
+  return res.writeHead(200, {
+    'Content-Type': 'application/json'
+  }).end(JSON.stringify(getEveryGear())).send();
 });
 
 app.route("/:path?")

@@ -21,7 +21,7 @@
         "maximum health": 60
       }
     ],
-    "hidden-stats": [
+    "hidden": [
       {
         "ranged physical defence": 2
       },
@@ -126,7 +126,7 @@
       "physical defence": "3",
       "percent": false
     },
-    "hidden-stats": [
+    "hidden": [
       {
         "ranged physical defence": 2
       },

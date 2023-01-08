@@ -70,4 +70,18 @@ function removeEquipment(category, id) {
     return data;
 }
 
-module.exports = { addEquipment, getEquipment, removeEquipment };
+function getEveryGear() {
+    let data = [];
+    let dataFolder = 'data';
+    let dateFiles = fs.readdirSync(dataFolder);
+    for (let file of dateFiles) {
+        let rawData = fs.readFileSync(`${dataFolder}/${file}`);
+        let fileData = JSON.parse(rawData);
+        for (let id in fileData) {
+            data.push(fileData[id]);
+        }
+    }
+    return data;
+}
+
+module.exports = { addEquipment, getEquipment, removeEquipment, getEveryGear };
