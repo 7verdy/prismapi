@@ -58,86 +58,86 @@
   "DAGGERS_S2": {
     "part": "DAGGERS",
     "set": "SET_2",
-    "name": "Vulcan Daggers",
-    "description": "A scalding knife, like it was forged by Vul'can himself.",
+    "name": "Cocoa Knives",
+    "description": "Sometimes, the sweetest things can be deadly.",
     "stats": [
       {
-        "attack": 18
+        "attack": 26
       },
       {
-        "attack": 21
+        "attack": 30
       },
       {
-        "attack": 25
+        "attack": 36
       },
       {
-        "attack": 28
+        "attack": 40
       },
       {
-        "attack": 32
+        "attack": 46
       }
     ],
     "bonus": {
       "attack": 10,
       "percent": true
     },
-    "origin": "AREA_2"
+    "origin": "AREA_3"
   },
   "SWORD_S3": {
     "part": "SWORD",
     "set": "SET_3",
-    "name": "Elastic Blade",
-    "description": "Achieve unrealistic movements with a blade of magic.",
+    "name": "Soulbound Sword",
+    "description": "Sever enemy spirits with the sword that killed Infernals.",
     "stats": [
       {
-        "attack": 10
+        "attack": 27
       },
       {
-        "attack": 12
+        "attack": 31
       },
       {
-        "attack": 14
+        "attack": 37
       },
       {
-        "attack": 16
+        "attack": 41
       },
       {
-        "attack": 18
+        "attack": 47
       }
     ],
     "bonus": {
-      "dodge rate": 10,
+      "magic defence": 7,
       "percent": false
     },
-    "origin": "AREA_1"
+    "origin": "AREA_3"
   },
   "SHIELD_S3": {
     "part": "SHIELD",
     "set": "SET_3",
-    "name": "Elastic Tambour",
-    "description": "Achieve uninterrupted actions with a drum of rebound.",
+    "name": "Eye of the Soul",
+    "description": "Look deep within your enemies, petrify their souls.",
     "stats": [
       {
-        "magic defence": 5
+        "magic defence": 17
       },
       {
-        "magic defence": 7
+        "magic defence": 21
       },
       {
-        "magic defence": 9
+        "magic defence": 27
       },
       {
-        "magic defence": 11
+        "magic defence": 31
       },
       {
-        "magic defence": 13
+        "magic defence": 37
       }
     ],
     "bonus": {
-      "magic defence": 2,
+      "magic defence": 4,
       "percent": false
     },
-    "origin": "AREA_1"
+    "origin": "AREA_3"
   },
   "DAGGERS_S3": {
     "part": "DAGGERS",
@@ -198,58 +198,58 @@
   "SWORD_S2": {
     "part": "SWORD",
     "set": "SET_2",
-    "name": "Vulcan Sword",
-    "description": "A searing sword, like it was forged by Vul'can himself.",
+    "name": "Sweet Tooth",
+    "description": "The blade of a renowned fighter who loved sweets.",
     "stats": [
-      {
-        "attack": 20
-      },
-      {
-        "attack": 23
-      },
-      {
-        "attack": 27
-      },
       {
         "attack": 30
       },
       {
         "attack": 34
+      },
+      {
+        "attack": 40
+      },
+      {
+        "attack": 44
+      },
+      {
+        "attack": 50
       }
     ],
     "bonus": {
       "attack": 5,
       "percent": true
     },
-    "origin": "AREA_2"
+    "origin": "AREA_3"
   },
   "SHIELD_S2": {
     "part": "SHIELD",
     "set": "SET_2",
-    "name": "Vulcan Aegis",
-    "description": "A scorching shield, like it was forged by Vul'can himself.",
+    "name": "Cocoa Bar",
+    "description": "It's a bar of chocolate. Hard, dark chocolate.",
     "stats": [
       {
-        "ranged physical defence": 20
-      },
-      {
-        "ranged physical defence": 23
-      },
-      {
-        "ranged physical defence": 27
+        "ranged physical defence": 26
       },
       {
         "ranged physical defence": 30
       },
       {
-        "ranged physical defence": 34
+        "ranged physical defence": 36
+      },
+      {
+        "ranged physical defence": 40
+      },
+      {
+        "ranged physical defence": 46
       }
     ],
     "bonus": {
-      "physical defence": 5,
-      "percent": false
+      "maximum health": 5,
+      "percent": true
     },
-    "origin": "AREA_2"
+    "origin": "AREA_3"
   },
   "HEAD_S3": {
     "part": "HEAD",
@@ -278,5 +278,173 @@
       "percent": true
     },
     "origin": "AREA_2"
+  },
+  "DAGGERS_S1": {
+    "part": "DAGGERS",
+    "set": "SET_1",
+    "name": "Knives of the Crusade",
+    "description": "The Crusade Sword, broken and reforged into Knives.",
+    "stats": [
+      {
+        "attack": 23
+      },
+      {
+        "attack": 26
+      },
+      {
+        "attack": 30
+      },
+      {
+        "attack": 33
+      },
+      {
+        "attack": 37
+      }
+    ],
+    "bonus": {
+      "critical rate": 10,
+      "percent": true
+    },
+    "origin": "AREA_3"
+  },
+  "HAMMER_S3_BIS": {
+    "part": "HAMMER",
+    "set": "SET_3",
+    "name": "Sinister Scythe",
+    "description": "Unfold the flesh of needless sacrifices, of victims.",
+    "stats": [
+      {
+        "attack": 23
+      },
+      {
+        "attack": 26
+      },
+      {
+        "attack": 30
+      },
+      {
+        "attack": 33
+      },
+      {
+        "attack": 37
+      }
+    ],
+    "bonus": {
+      "critical damage": 10,
+      "percent": true
+    },
+    "origin": "AREA_2"
+  },
+  "HAMMER_S3": {
+    "part": "HAMMER",
+    "set": "SET_3",
+    "name": "Soulcrusher",
+    "description": "The Fractured Forest sees the souls of all who enter it.",
+    "stats": [
+      {
+        "attack": 31
+      },
+      {
+        "attack": 35
+      },
+      {
+        "attack": 41
+      },
+      {
+        "attack": 45
+      },
+      {
+        "attack": 51
+      }
+    ],
+    "bonus": {
+      "magic defence": 14,
+      "percent": false
+    },
+    "origin": "AREA_3"
+  },
+  "SWORD_S4": {
+    "part": "SWORD",
+    "set": "SET_4",
+    "name": "Argosabre",
+    "description": "A Novan Sword from the very first odyssey of Prism.",
+    "stats": [
+      {
+        "attack": 32
+      },
+      {
+        "attack": 37
+      },
+      {
+        "attack": 45
+      },
+      {
+        "attack": 50
+      },
+      {
+        "attack": 58
+      }
+    ],
+    "bonus": {
+      "critical damage": 5,
+      "percent": false
+    },
+    "origin": "AREA_3"
+  },
+  "SHIELD_S4": {
+    "part": "SHIELD",
+    "set": "SET_4",
+    "name": "Argokite",
+    "description": "A Novan Shield from the very first odyssey of Prism.",
+    "stats": [
+      {
+        "ranged physical defence": 32
+      },
+      {
+        "ranged physical defence": 37
+      },
+      {
+        "ranged physical defence": 45
+      },
+      {
+        "ranged physical defence": 50
+      },
+      {
+        "ranged physical defence": 58
+      }
+    ],
+    "bonus": {
+      "maximum health": 5,
+      "percent": true
+    },
+    "origin": "AREA_3"
+  },
+  "HAMMER_S4": {
+    "part": "HAMMER",
+    "set": "SET_4",
+    "name": "Argomight",
+    "description": "A Novan Hammer from the very first odyssey of Prism.",
+    "stats": [
+      {
+        "attack": 34
+      },
+      {
+        "attack": 39
+      },
+      {
+        "attack": 47
+      },
+      {
+        "attack": 52
+      },
+      {
+        "attack": 60
+      }
+    ],
+    "bonus": {
+      "critical damage": 10,
+      "percent": true
+    },
+    "origin": "AREA_3"
   }
 }

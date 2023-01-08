@@ -2,124 +2,124 @@
   "HEAD_S1": {
     "part": "HEAD",
     "set": "SET_1",
-    "name": "Bearnoculars",
-    "description": "See through the eyes of a bear hungry for glory!",
+    "name": "Crusader's Helm",
+    "description": "An old, comfortable favourite of many young knights.",
     "stats": [
       {
-        "maximum health": 75
+        "maximum health": 125
       },
       {
-        "maximum health": 85
+        "maximum health": 140
       },
       {
-        "maximum health": 95
+        "maximum health": 160
       },
       {
-        "maximum health": 105
+        "maximum health": 175
       },
       {
-        "maximum health": 115
+        "maximum health": 195
+      }
+    ],
+    "bonus": {
+      "critical rate": 5,
+      "percent": true
+    },
+    "origin": "AREA_3"
+  },
+  "BODY_S1": {
+    "part": "BODY",
+    "set": "SET_1",
+    "name": "Crusader's Mail",
+    "description": "The fur protects the wearer from attacks and chafing.",
+    "stats": [
+      {
+        "physical defence": 25
+      },
+      {
+        "physical defence": 28
+      },
+      {
+        "physical defence": 32
+      },
+      {
+        "physical defence": 35
+      },
+      {
+        "physical defence": 39
+      }
+    ],
+    "bonus": {
+      "dodge rate": 10,
+      "percent": false
+    },
+    "hidden-stats": [
+      {
+        "ranged physical defence": 6
+      },
+      {
+        "ranged physical defence": 7
+      },
+      {
+        "ranged physical defence": 8
+      },
+      {
+        "ranged physical defence": 9
+      },
+      {
+        "ranged physical defence": 10
+      }
+    ],
+    "origin": "AREA_3"
+  },
+  "HEAD_S2": {
+    "part": "HEAD",
+    "set": "SET_2",
+    "name": "Cocoa Tusks",
+    "description": "Inspire fear and diabetes in your enemies!",
+    "stats": [
+      {
+        "maximum health": 145
+      },
+      {
+        "maximum health": 165
+      },
+      {
+        "maximum health": 195
+      },
+      {
+        "maximum health": 215
+      },
+      {
+        "maximum health": 245
       }
     ],
     "bonus": {
       "attack": 5,
       "percent": true
     },
-    "origin": "AREA_2"
-  },
-  "BODY_S1": {
-    "part": "BODY",
-    "set": "SET_1",
-    "name": "Honeycomb Armour",
-    "description": "Withstand tough blows like a bear hungry for anything!",
-    "stats": [
-      {
-        "physical defence": 15
-      },
-      {
-        "physical defence": 17
-      },
-      {
-        "physical defence": 19
-      },
-      {
-        "physical defence": 21
-      },
-      {
-        "physical defence": 23
-      }
-    ],
-    "bonus": {
-      "maximum health": 5,
-      "percent": true
-    },
-    "hidden-stats": [
-      {
-        "ranged physical defence": 4
-      },
-      {
-        "ranged physical defence": 4
-      },
-      {
-        "ranged physical defence": 5
-      },
-      {
-        "ranged physical defence": 5
-      },
-      {
-        "ranged physical defence": 6
-      }
-    ],
-    "origin": "AREA_2"
-  },
-  "HEAD_S2": {
-    "part": "HEAD",
-    "set": "SET_2",
-    "name": "Fury Mane",
-    "description": "Be the Alpha Dire Wolf.\r\nFill your foes with fear!",
-    "stats": [
-      {
-        "maximum health": 45
-      },
-      {
-        "maximum health": 50
-      },
-      {
-        "maximum health": 55
-      },
-      {
-        "maximum health": 60
-      },
-      {
-        "maximum health": 65
-      }
-    ],
-    "bonus": {
-      "critical rate": 5,
-      "percent": true
-    },
-    "origin": "AREA_1"
+    "origin": "AREA_3"
   },
   "BODY_S2": {
     "part": "BODY",
     "set": "SET_2",
-    "name": "Vulcan Vest",
-    "description": "A fantastic vest, like it was forged by Vul'can himself",
+    "name": "Cocoa Suit",
+    "description": "Coast yourself with literal sugar and blood.",
     "stats": [
       {
-        "physical defence": 21
-      },
-      {
-        "physical defence": 24
-      },
-      {
-        "physical defence": 28
+        "physical defence": 27
       },
       {
         "physical defence": 31
       },
       {
-        "physical defence": 35
+        "physical defence": 37
+      },
+      {
+        "physical defence": 41
+      },
+      {
+        "physical defence": 47
       }
     ],
     "bonus": {
@@ -128,12 +128,6 @@
     },
     "hidden-stats": [
       {
-        "ranged physical defence": 5
-      },
-      {
-        "ranged physical defence": 6
-      },
-      {
         "ranged physical defence": 7
       },
       {
@@ -141,109 +135,161 @@
       },
       {
         "ranged physical defence": 9
+      },
+      {
+        "ranged physical defence": 10
+      },
+      {
+        "ranged physical defence": 12
       }
     ],
-    "origin": "AREA_2"
+    "origin": "AREA_3"
   },
   "HEAD_S3": {
     "part": "HEAD",
     "set": "SET_3",
-    "name": "Elastic Mask",
-    "description": "Achieve extravagant performances with a helmet of celerity.",
+    "name": "Soulbound Helm",
+    "description": "You may hear the faint cries of souls trapped within.",
     "stats": [
       {
-        "maximum health": 50
+        "maximum health": 140
       },
       {
-        "maximum health": 60
+        "maximum health": 160
       },
       {
-        "maximum health": 70
+        "maximum health": 190
       },
       {
-        "maximum health": 80
+        "maximum health": 210
       },
       {
-        "maximum health": 90
+        "maximum health": 240
       }
     ],
     "bonus": {
-      "magic defence": 2,
+      "magic defence": 7,
       "percent": false
     },
-    "origin": "AREA_1"
+    "origin": "AREA_3"
   },
   "BODY_S3": {
     "part": "BODY",
     "set": "SET_3",
-    "name": "Sinister Robes",
-    "description": "Uphold the tradition of heathens, for false deities.",
+    "name": "Soulbound Cuirass",
+    "description": "The wearer will come to trust darkness like a friend.",
     "stats": [
-      {
-        "physical defence": 20
-      },
-      {
-        "physical defence": 23
-      },
-      {
-        "physical defence": 27
-      },
       {
         "physical defence": 30
       },
       {
         "physical defence": 34
+      },
+      {
+        "physical defence": 40
+      },
+      {
+        "physical defence": 44
+      },
+      {
+        "physical defence": 50
       }
     ],
     "bonus": {
-      "critical rate": 5,
+      "magic damage reduction": 5,
       "percent": true
     },
     "hidden-stats": [
-      {
-        "ranged physical defence": 5
-      },
-      {
-        "ranged physical defence": 6
-      },
-      {
-        "ranged physical defence": 7
-      },
       {
         "ranged physical defence": 8
       },
       {
         "ranged physical defence": 9
+      },
+      {
+        "ranged physical defence": 10
+      },
+      {
+        "ranged physical defence": 11
+      },
+      {
+        "ranged physical defence": 13
       }
     ],
-    "origin": "AREA_2"
+    "origin": "AREA_3"
   },
-  "HAMMER_S3": {
-    "part": "HAMMER",
-    "set": "SET_3",
-    "name": "Sinister Scythe",
-    "description": "Unfold the flesh of needless sacrifices, of victims.",
+
+  "BODY_S4": {
+    "part": "BODY",
+    "set": "SET_4",
+    "name": "Argonaut",
+    "description": "The first Prism Humans were led by heroes on an odyssey.",
     "stats": [
       {
-        "attack": 23
+        "physical defence": 32
       },
       {
-        "attack": 26
+        "physical defence": 37
       },
       {
-        "attack": 30
+        "physical defence": 45
       },
       {
-        "attack": 33
+        "physical defence": 49
       },
       {
-        "attack": 37
+        "physical defence": 58
       }
     ],
     "bonus": {
-      "critical damage": 10,
+      "maximum health": 5,
       "percent": true
     },
-    "origin": "AREA_2"
+    "hidden-stats": [
+      {
+        "ranged physical defence": 8
+      },
+      {
+        "ranged physical defence": 9
+      },
+      {
+        "ranged physical defence": 11
+      },
+      {
+        "ranged physical defence": 13
+      },
+      {
+        "ranged physical defence": 15
+      }
+    ],
+    "origin": "AREA_3"
+  },
+  "HEAD_S4": {
+    "part": "HEAD",
+    "set": "SET_4",
+    "name": "Argohorns",
+    "description": "The first Novan sailors wore the horns of a Golden Tuffler.",
+    "stats": [
+      {
+        "maximum health": 160
+      },
+      {
+        "maximum health": 185
+      },
+      {
+        "maximum health": 225
+      },
+      {
+        "maximum health": 250
+      },
+      {
+        "maximum health": 290
+      }
+    ],
+    "bonus": {
+      "critical damage": 5,
+      "percent": true
+    },
+    "origin": "AREA_3"
   }
 }
