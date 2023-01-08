@@ -1,221 +1,249 @@
 {
-    "HEAD_S1": {
-        "part": "HEAD",
-        "set": "SET_1",
-        "name": "Adventurer Cap",
-        "description": "It's dangerous to go alone! Wear this and stay safe!",
-        "stats": [
-            {
-                "maximum health": 40
-            },
-            {
-                "maximum health": 45
-            },
-            {
-                "maximum health": 50
-            },
-            {
-                "maximum health": 55
-            },
-            {
-                "maximum health": 60
-            }
-        ],
-        "hidden": [
-            {
-                "ranged physical defence": 2
-            },
-            {
-                "ranged physical defence": 2
-            },
-            {
-                "ranged physical defence": 3
-            },
-            {
-                "ranged physical defence": 3
-            },
-            {
-                "ranged physical defence": 3
-            }
-        ],
-        "bonus": {
-            "ranged physical defence": 3,
-            "percent": false
-        },
-        "origin": "AREA_1"
+  "HEAD_S1": {
+    "part": "HEAD",
+    "set": "SET_1",
+    "name": "Bearnoculars",
+    "description": "See through the eyes of a bear hungry for glory!",
+    "stats": [
+      {
+        "maximum health": 75
+      },
+      {
+        "maximum health": 85
+      },
+      {
+        "maximum health": 95
+      },
+      {
+        "maximum health": 105
+      },
+      {
+        "maximum health": 115
+      }
+    ],
+    "bonus": {
+      "attack": 5,
+      "percent": true
     },
-    "BODY_S1": {
-        "part": "BODY",
-        "set": "SET_1",
-        "name": "Adventurer Armour",
-        "description": "It's dangerous to go alone! Wear this and live long!",
-        "stats": [
-            {
-                "physical defence": 8
-            },
-            {
-                "physical defence": 9
-            },
-            {
-                "physical defence": 10
-            },
-            {
-                "physical defence": 11
-            },
-            {
-                "physical defence": 12
-            }
-        ],
-        "bonus": {
-            "maximum health": 5,
-            "percent": true
-        },
-        "origin": "AREA_1"
+    "origin": "AREA_2"
+  },
+  "BODY_S1": {
+    "part": "BODY",
+    "set": "SET_1",
+    "name": "Honeycomb Armour",
+    "description": "Withstand tough blows like a bear hungry for anything!",
+    "stats": [
+      {
+        "physical defence": 15
+      },
+      {
+        "physical defence": 17
+      },
+      {
+        "physical defence": 19
+      },
+      {
+        "physical defence": 21
+      },
+      {
+        "physical defence": 23
+      }
+    ],
+    "bonus": {
+      "maximum health": 5,
+      "percent": true
     },
-    "HEAD_S2": {
-        "part": "HEAD",
-        "set": "SET_2",
-        "name": "Fury Mane",
-        "description": "Be the Alpha Dire Wolf.\r\nFill your foes with fear!",
-        "stats": [
-            {
-                "maximum health": 45
-            },
-            {
-                "maximum health": 50
-            },
-            {
-                "maximum health": 55
-            },
-            {
-                "maximum health": 60
-            },
-            {
-                "maximum health": 65
-            }
-        ],
-        "bonus": {
-            "critical rate": 5,
-            "percent": true
-        },
-        "origin": "AREA_1"
+    "hidden-stats": [
+      {
+        "ranged physical defence": 4
+      },
+      {
+        "ranged physical defence": 4
+      },
+      {
+        "ranged physical defence": 5
+      },
+      {
+        "ranged physical defence": 5
+      },
+      {
+        "ranged physical defence": 6
+      }
+    ],
+    "origin": "AREA_2"
+  },
+  "HEAD_S2": {
+    "part": "HEAD",
+    "set": "SET_2",
+    "name": "Fury Mane",
+    "description": "Be the Alpha Dire Wolf.\r\nFill your foes with fear!",
+    "stats": [
+      {
+        "maximum health": 45
+      },
+      {
+        "maximum health": 50
+      },
+      {
+        "maximum health": 55
+      },
+      {
+        "maximum health": 60
+      },
+      {
+        "maximum health": 65
+      }
+    ],
+    "bonus": {
+      "critical rate": 5,
+      "percent": true
     },
-    "BODY_S2": {
-        "part": "BODY",
-        "set": "SET_2",
-        "name": "Fury Suit",
-        "description": "Be the Alpha Dire Wolf.\r\nRemain unruffled by nature!",
-        "stats": [
-            {
-                "physical defence": 9
-            },
-            {
-                "physical defence": 10
-            },
-            {
-                "physical defence": 11
-            },
-            {
-                "physical defence": 12
-            },
-            {
-                "physical defence": 13
-            }
-        ],
-        "bonus": {
-            "physical defence": 3,
-            "percent": false
-        },
-        "hidden": [
-            {
-                "ranged physical defence": 2
-            },
-            {
-                "ranged physical defence": 3
-            },
-            {
-                "ranged physical defence": 3
-            },
-            {
-                "ranged physical defence": 3
-            },
-            {
-                "ranged physical defence": 3
-            }
-        ],
-        "origin": "AREA_1"
+    "origin": "AREA_1"
+  },
+  "BODY_S2": {
+    "part": "BODY",
+    "set": "SET_2",
+    "name": "Vulcan Vest",
+    "description": "A fantastic vest, like it was forged by Vul'can himself",
+    "stats": [
+      {
+        "physical defence": 21
+      },
+      {
+        "physical defence": 24
+      },
+      {
+        "physical defence": 28
+      },
+      {
+        "physical defence": 31
+      },
+      {
+        "physical defence": 35
+      }
+    ],
+    "bonus": {
+      "maximum health": 5,
+      "percent": true
     },
-    "HEAD_S3": {
-        "part": "HEAD",
-        "set": "SET_3",
-        "name": "Elastic Mask",
-        "description": "Achieve extravagant performances with a helmet of celerity.",
-        "stats": [
-            {
-                "maximum health": 50
-            },
-            {
-                "maximum health": 60
-            },
-            {
-                "maximum health": 70
-            },
-            {
-                "maximum health": 80
-            },
-            {
-                "maximum health": 90
-            }
-        ],
-        "bonus": {
-            "magic defence": 2,
-            "percent": false
-        },
-        "origin": "AREA_1"
+    "hidden-stats": [
+      {
+        "ranged physical defence": 5
+      },
+      {
+        "ranged physical defence": 6
+      },
+      {
+        "ranged physical defence": 7
+      },
+      {
+        "ranged physical defence": 8
+      },
+      {
+        "ranged physical defence": 9
+      }
+    ],
+    "origin": "AREA_2"
+  },
+  "HEAD_S3": {
+    "part": "HEAD",
+    "set": "SET_3",
+    "name": "Elastic Mask",
+    "description": "Achieve extravagant performances with a helmet of celerity.",
+    "stats": [
+      {
+        "maximum health": 50
+      },
+      {
+        "maximum health": 60
+      },
+      {
+        "maximum health": 70
+      },
+      {
+        "maximum health": 80
+      },
+      {
+        "maximum health": 90
+      }
+    ],
+    "bonus": {
+      "magic defence": 2,
+      "percent": false
     },
-    "BODY_S3": {
-        "part": "BODY",
-        "set": "SET_3",
-        "name": "Elastic Garb",
-        "description": "Achieve flamboyant performances with a suit of adaptability.",
-        "stats": [
-            {
-                "physical defence": 10
-            },
-            {
-                "physical defence": 12
-            },
-            {
-                "physical defence": 14
-            },
-            {
-                "physical defence": 16
-            },
-            {
-                "physical defence": 18
-            }
-        ],
-        "bonus": {
-            "magic defence": 2,
-            "percent": false
-        },
-        "hidden-stats": [
-            {
-                "ranged physical defence": 3
-            },
-            {
-                "ranged physical defence": 3
-            },
-            {
-                "ranged physical defence": 4
-            },
-            {
-                "ranged physical defence": 4
-            },
-            {
-                "ranged physical defence": 5
-            }
-        ],
-        "origin": "AREA_1"
-    }
+    "origin": "AREA_1"
+  },
+  "BODY_S3": {
+    "part": "BODY",
+    "set": "SET_3",
+    "name": "Sinister Robes",
+    "description": "Uphold the tradition of heathens, for false deities.",
+    "stats": [
+      {
+        "physical defence": 20
+      },
+      {
+        "physical defence": 23
+      },
+      {
+        "physical defence": 27
+      },
+      {
+        "physical defence": 30
+      },
+      {
+        "physical defence": 34
+      }
+    ],
+    "bonus": {
+      "critical rate": 5,
+      "percent": true
+    },
+    "hidden-stats": [
+      {
+        "ranged physical defence": 5
+      },
+      {
+        "ranged physical defence": 6
+      },
+      {
+        "ranged physical defence": 7
+      },
+      {
+        "ranged physical defence": 8
+      },
+      {
+        "ranged physical defence": 9
+      }
+    ],
+    "origin": "AREA_2"
+  },
+  "HAMMER_S3": {
+    "part": "HAMMER",
+    "set": "SET_3",
+    "name": "Sinister Scythe",
+    "description": "Unfold the flesh of needless sacrifices, of victims.",
+    "stats": [
+      {
+        "attack": 23
+      },
+      {
+        "attack": 26
+      },
+      {
+        "attack": 30
+      },
+      {
+        "attack": 33
+      },
+      {
+        "attack": 37
+      }
+    ],
+    "bonus": {
+      "critical damage": 10,
+      "percent": true
+    },
+    "origin": "AREA_2"
+  }
 }

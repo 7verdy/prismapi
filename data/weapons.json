@@ -58,30 +58,30 @@
   "DAGGERS_S2": {
     "part": "DAGGERS",
     "set": "SET_2",
-    "name": "Fury Daggers",
-    "description": "Be the Alpha Dire Wolf.\r\nWield your ferocious fangs!",
+    "name": "Vulcan Daggers",
+    "description": "A scalding knife, like it was forged by Vul'can himself.",
     "stats": [
       {
-        "attack": 7
+        "attack": 18
       },
       {
-        "attack": 8
+        "attack": 21
       },
       {
-        "attack": 9
+        "attack": 25
       },
       {
-        "attack": 10
+        "attack": 28
       },
       {
-        "attack": 11
+        "attack": 32
       }
     ],
     "bonus": {
-      "critical damage": 10,
+      "attack": 10,
       "percent": true
     },
-    "origin": "AREA_1"
+    "origin": "AREA_2"
   },
   "SWORD_S3": {
     "part": "SWORD",
@@ -166,5 +166,117 @@
       "percent": false
     },
     "origin": "AREA_1"
+  },
+  "HAMMER_S1": {
+    "part": "HAMMER",
+    "set": "SET_1",
+    "name": "Claw Hammer",
+    "description": "Claw your way like a bear hungry for sweet victory!",
+    "stats": [
+      {
+        "attack": 17
+      },
+      {
+        "attack": 19
+      },
+      {
+        "attack": 21
+      },
+      {
+        "attack": 23
+      },
+      {
+        "attack": 25
+      }
+    ],
+    "bonus": {
+      "physical defence": 4,
+      "percent": false
+    },
+    "origin": "AREA_2"
+  },
+  "SWORD_S2": {
+    "part": "SWORD",
+    "set": "SET_2",
+    "name": "Vulcan Sword",
+    "description": "A searing sword, like it was forged by Vul'can himself.",
+    "stats": [
+      {
+        "attack": 20
+      },
+      {
+        "attack": 23
+      },
+      {
+        "attack": 27
+      },
+      {
+        "attack": 30
+      },
+      {
+        "attack": 34
+      }
+    ],
+    "bonus": {
+      "attack": 5,
+      "percent": true
+    },
+    "origin": "AREA_2"
+  },
+  "SHIELD_S2": {
+    "part": "SHIELD",
+    "set": "SET_2",
+    "name": "Vulcan Aegis",
+    "description": "A scorching shield, like it was forged by Vul'can himself.",
+    "stats": [
+      {
+        "ranged physical defence": 20
+      },
+      {
+        "ranged physical defence": 23
+      },
+      {
+        "ranged physical defence": 27
+      },
+      {
+        "ranged physical defence": 30
+      },
+      {
+        "ranged physical defence": 34
+      }
+    ],
+    "bonus": {
+      "physical defence": 5,
+      "percent": false
+    },
+    "origin": "AREA_2"
+  },
+  "HEAD_S3": {
+    "part": "HEAD",
+    "set": "SET_3",
+    "name": "Sinister Visor",
+    "description": "Behold, the sight of the unworthy, of the misleaders.",
+    "stats": [
+      {
+        "maximum health": 110
+      },
+      {
+        "maximum health": 125
+      },
+      {
+        "maximum health": 145
+      },
+      {
+        "maximum health": 160
+      },
+      {
+        "maximum health": 180
+      }
+    ],
+    "bonus": {
+      "attack": 5,
+      "percent": true
+    },
+    "origin": "AREA_2"
   }
 }
