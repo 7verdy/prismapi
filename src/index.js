@@ -82,7 +82,7 @@ app.route("/:path?")
       equipment['stats'] = statsFromNameValue(statName, statValues);
 
       equipment['bonus'] = {};
-      equipment['bonus'][req.body['bonus-stat-name'].toLowerCase()] = req.body['bonus-stats-value'];
+      equipment['bonus'][req.body['bonus-stat-name'].toLowerCase()] = +req.body['bonus-stats-value'];
       equipment['bonus']['percent'] = req.body['bonus-percentage'] === 'true';
 
       if (req.body['hidden-stats-value'] != '') {
