@@ -327,6 +327,87 @@
         "critical rate": 10,
         "percent": true
       }
+    },
+    "SWORD_S2": {
+      "part": "SWORD",
+      "set": "SET_2",
+      "name": "Sweet Tooth",
+      "description": "The blade of a renowned fighter who loved sweets.",
+      "stats": [
+        {
+          "attack": 30
+        },
+        {
+          "attack": 34
+        },
+        {
+          "attack": 40
+        },
+        {
+          "attack": 44
+        },
+        {
+          "attack": 50
+        }
+      ],
+      "bonus": {
+        "attack": 5,
+        "percent": true
+      }
+    },
+    "SHIELD_S2": {
+      "part": "SHIELD",
+      "set": "SET_2",
+      "name": "Cocoa Bar",
+      "description": "It's a bar of chocolate. Hard, dark chocolate.",
+      "stats": [
+        {
+          "ranged physical defence": 26
+        },
+        {
+          "ranged physical defence": 30
+        },
+        {
+          "ranged physical defence": 36
+        },
+        {
+          "ranged physical defence": 40
+        },
+        {
+          "ranged physical defence": 46
+        }
+      ],
+      "bonus": {
+        "maximum health": 5,
+        "percent": true
+      }
+    },
+    "DAGGERS_S2": {
+      "part": "DAGGERS",
+      "set": "SET_2",
+      "name": "Cocoa Knives",
+      "description": "Sometimes, the sweetest things can be deadly.",
+      "stats": [
+        {
+          "attack": 26
+        },
+        {
+          "attack": 30
+        },
+        {
+          "attack": 36
+        },
+        {
+          "attack": 40
+        },
+        {
+          "attack": 46
+        }
+      ],
+      "bonus": {
+        "attack": 10,
+        "percent": true
+      }
     }
   }
 }

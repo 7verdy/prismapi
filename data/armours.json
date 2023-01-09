@@ -527,6 +527,77 @@
         "critical rate": 5,
         "percent": true
       }
+    },
+    "BODY_S2": {
+      "part": "BODY",
+      "set": "SET_2",
+      "name": "Cocoa Suit",
+      "description": "Coat yourself with literal sugar and blood.",
+      "stats": [
+        {
+          "physical defence": 27
+        },
+        {
+          "physical defence": 31
+        },
+        {
+          "physical defence": 37
+        },
+        {
+          "physical defence": 41
+        },
+        {
+          "physical defence": 47
+        }
+      ],
+      "bonus": {
+        "maximum health": 5,
+        "percent": true
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 7
+        },
+        {
+          "ranged physical defence": 8
+        },
+        {
+          "ranged physical defence": 9
+        },
+        {
+          "ranged physical defence": 10
+        },
+        {
+          "ranged physical defence": 12
+        }
+      ]
+    },
+    "HEAD_S2": {
+      "part": "HEAD",
+      "set": "SET_2",
+      "name": "Cocoa Tusks",
+      "description": "Inspire fear and diabetes in your enemies!",
+      "stats": [
+        {
+          "maximum health": 145
+        },
+        {
+          "maximum health": 165
+        },
+        {
+          "maximum health": 195
+        },
+        {
+          "maximum health": 215
+        },
+        {
+          "maximum health": 245
+        }
+      ],
+      "bonus": {
+        "attack": 5,
+        "percent": true
+      }
     }
   }
 }
