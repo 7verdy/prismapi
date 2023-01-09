@@ -244,6 +244,60 @@
         "attack": 10,
         "percent": true
       }
+    },
+    "DAGGERS_S3": {
+      "part": "DAGGERS",
+      "set": "SET_3",
+      "name": "Sinister Silencers",
+      "description": "Untold, the history of infamy, a dagger of assassins. ",
+      "stats": [
+        {
+          "attack": 19
+        },
+        {
+          "attack": 22
+        },
+        {
+          "attack": 26
+        },
+        {
+          "attack": 29
+        },
+        {
+          "attack": 33
+        }
+      ],
+      "bonus": {
+        "critical damage": 10,
+        "percent": true
+      }
+    },
+    "HAMMER_S3": {
+      "part": "HAMMER",
+      "set": "SET_3",
+      "name": "Sinister Scythe",
+      "description": "Unfold the flesh of needless sacrifices, of victims.",
+      "stats": [
+        {
+          "attack": 23
+        },
+        {
+          "attack": 26
+        },
+        {
+          "attack": 30
+        },
+        {
+          "attack": 33
+        },
+        {
+          "attack": 37
+        }
+      ],
+      "bonus": {
+        "critical damage": 10,
+        "percent": true
+      }
     }
   }
 }
