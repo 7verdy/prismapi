@@ -1,2 +1,75 @@
 {
+  "AREA_1": {
+    "BODY_S1": {
+      "part": "BODY",
+      "set": "SET_1",
+      "name": "Adventurer Armour",
+      "description": "It's dangerous to go alone! Wear this and live long!",
+      "stats": [
+        {
+          "physical defence": 8
+        },
+        {
+          "physical defence": 9
+        },
+        {
+          "physical defence": 10
+        },
+        {
+          "physical defence": 11
+        },
+        {
+          "physical defence": 12
+        }
+      ],
+      "bonus": {
+        "maximum health": 5,
+        "percent": true
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 2
+        },
+        {
+          "ranged physical defence": 2
+        },
+        {
+          "ranged physical defence": 3
+        },
+        {
+          "ranged physical defence": 3
+        },
+        {
+          "ranged physical defence": 3
+        }
+      ]
+    },
+    "HEAD_S1": {
+      "part": "HEAD",
+      "set": "SET_1",
+      "name": "Adventurer Cap",
+      "description": "It's dangerous to go alone! Wear this and stay safe!",
+      "stats": [
+        {
+          "maximum health": 40
+        },
+        {
+          "maximum health": 45
+        },
+        {
+          "maximum health": 50
+        },
+        {
+          "maximum health": 55
+        },
+        {
+          "maximum health": 60
+        }
+      ],
+      "bonus": {
+        "ranged physical defence": 3,
+        "percent": false
+      }
+    }
+  }
 }
