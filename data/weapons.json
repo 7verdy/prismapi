@@ -80,6 +80,87 @@
         "critical damage": 10,
         "percent": true
       }
+    },
+    "SWORD_S3": {
+      "part": "SWORD",
+      "set": "SET_3",
+      "name": "Elastic Blade",
+      "description": "Achieve unrealistic movements with a blade of magic.",
+      "stats": [
+        {
+          "attack": 10
+        },
+        {
+          "attack": 12
+        },
+        {
+          "attack": 14
+        },
+        {
+          "attack": 16
+        },
+        {
+          "attack": 18
+        }
+      ],
+      "bonus": {
+        "dodge rate": 10,
+        "percent": false
+      }
+    },
+    "SHIELD_S3": {
+      "part": "SHIELD",
+      "set": "SET_3",
+      "name": "Elastic Tambour",
+      "description": "Achieve uninterrupted actions with a drum of rebound.",
+      "stats": [
+        {
+          "magic defence": 5
+        },
+        {
+          "magic defence": 7
+        },
+        {
+          "magic defence": 9
+        },
+        {
+          "magic defence": 11
+        },
+        {
+          "magic defence": 13
+        }
+      ],
+      "bonus": {
+        "magic defence": 2,
+        "percent": false
+      }
+    },
+    "DAGGERS_S3": {
+      "part": "DAGGERS",
+      "set": "SET_3",
+      "name": "Elastic Knives",
+      "description": "Achieve impossible slices with a knife of charm.",
+      "stats": [
+        {
+          "attack": 8
+        },
+        {
+          "attack": 10
+        },
+        {
+          "attack": 12
+        },
+        {
+          "attack": 14
+        },
+        {
+          "attack": 16
+        }
+      ],
+      "bonus": {
+        "dodge rate": 15,
+        "percent": false
+      }
     }
   }
 }

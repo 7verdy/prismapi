@@ -141,6 +141,77 @@
         "critical rate": 5,
         "percent": true
       }
+    },
+    "BODY_S3": {
+      "part": "BODY",
+      "set": "SET_3",
+      "name": "Elastic Garb",
+      "description": "Achieve flamboyant performances with a suit of adaptability.",
+      "stats": [
+        {
+          "physical defence": 10
+        },
+        {
+          "physical defence": 12
+        },
+        {
+          "physical defence": 14
+        },
+        {
+          "physical defence": 16
+        },
+        {
+          "physical defence": 18
+        }
+      ],
+      "bonus": {
+        "magic defence": 2,
+        "percent": false
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 3
+        },
+        {
+          "ranged physical defence": 3
+        },
+        {
+          "ranged physical defence": 4
+        },
+        {
+          "ranged physical defence": 4
+        },
+        {
+          "ranged physical defence": 5
+        }
+      ]
+    },
+    "HEAD_S3": {
+      "part": "HEAD",
+      "set": "SET_3",
+      "name": "Elastic Mask",
+      "description": "Achieve extravagant performances with a helmet of celerity.",
+      "stats": [
+        {
+          "maximum health": 50
+        },
+        {
+          "maximum health": 60
+        },
+        {
+          "maximum health": 70
+        },
+        {
+          "maximum health": 80
+        },
+        {
+          "maximum health": 90
+        }
+      ],
+      "bonus": {
+        "magic defence": 2,
+        "percent": false
+      }
     }
   }
 }
