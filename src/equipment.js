@@ -6,23 +6,22 @@ function addEquipment(category, body) {
     const filePath = `data/${category}.json`;
     setOriginAndSet(body);
     let data = {};
-    let equipmentId = body['id'];
+    let area = body['origin'];
+    let id = body['id'];
+    delete body['origin'];
     delete body['id'];
 
     const fileExists = fs.existsSync(filePath);
-    if (!fileExists) {
-        data[equipmentId] = body;
-        fs.writeFileSync(filePath, JSON.stringify(data, null, 4), { encoding: 'utf8', flag: 'w' }, function (err) {
-            // if (err) throw err;
-        });
-    } else {
+    if (fileExists) {
         let rawData = fs.readFileSync(filePath);
         data = JSON.parse(rawData);
-        data[equipmentId] = body;
-        fs.writeFileSync(filePath, JSON.stringify(data, null, 4), { encoding: 'utf8', flag: 'w' }, function (err) {
-            if (err) throw err;
-        });
     }
+    if (!data[area])
+        data[area] = {};
+    data[area][id] = body;
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2), { encoding: 'utf8', flag: 'w' }, function (err) {
+        if (err) throw err;
+    });
 
     return data;
 }
