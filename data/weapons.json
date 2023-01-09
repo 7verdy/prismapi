@@ -408,6 +408,168 @@
         "attack": 10,
         "percent": true
       }
+    },
+    "SWORD_S3": {
+      "part": "SWORD",
+      "set": "SET_3",
+      "name": "Soulbound Sword",
+      "description": "Sever enemy spirits with the sword that killed Infernals.",
+      "stats": [
+        {
+          "attack": 27
+        },
+        {
+          "attack": 31
+        },
+        {
+          "attack": 37
+        },
+        {
+          "attack": 41
+        },
+        {
+          "attack": 47
+        }
+      ],
+      "bonus": {
+        "magic defence": 7,
+        "percent": false
+      }
+    },
+    "SHIELD_S3": {
+      "part": "SHIELD",
+      "set": "SET_3",
+      "name": "Eye of the Soul",
+      "description": "Look deep within your enemies, petrify their souls.",
+      "stats": [
+        {
+          "magic defence": 17
+        },
+        {
+          "magic defence": 21
+        },
+        {
+          "magic defence": 27
+        },
+        {
+          "magic defence": 31
+        },
+        {
+          "magic defence": 37
+        }
+      ],
+      "bonus": {
+        "magic defence": 4,
+        "percent": false
+      }
+    },
+    "HAMMER_S3": {
+      "part": "HAMMER",
+      "set": "SET_3",
+      "name": "Soulcrusher",
+      "description": "The Fractured Forest sees the souls of all who enter it.",
+      "stats": [
+        {
+          "attack": 31
+        },
+        {
+          "attack": 35
+        },
+        {
+          "attack": 41
+        },
+        {
+          "attack": 45
+        },
+        {
+          "attack": 51
+        }
+      ],
+      "bonus": {
+        "magic defence": 14,
+        "percent": false
+      }
+    },
+    "SWORD_S4": {
+      "part": "SWORD",
+      "set": "SET_4",
+      "name": "Argosabre",
+      "description": "A Novan Sword from the very first odyssey of Prism.",
+      "stats": [
+        {
+          "attack": 32
+        },
+        {
+          "attack": 37
+        },
+        {
+          "attack": 45
+        },
+        {
+          "attack": 50
+        },
+        {
+          "attack": 58
+        }
+      ],
+      "bonus": {
+        "critical damage": 5,
+        "percent": true
+      }
+    },
+    "SHIELD_S4": {
+      "part": "SHIELD",
+      "set": "SET_4",
+      "name": "Argokite",
+      "description": "A Novan Shield from the very first odyssey of Prism.",
+      "stats": [
+        {
+          "ranged physical defence": 32
+        },
+        {
+          "ranged physical defence": 37
+        },
+        {
+          "ranged physical defence": 45
+        },
+        {
+          "ranged physical defence": 50
+        },
+        {
+          "ranged physical defence": 58
+        }
+      ],
+      "bonus": {
+        "maximum health": 5,
+        "percent": true
+      }
+    },
+    "HAMMER_S4": {
+      "part": "HAMMER",
+      "set": "SET_4",
+      "name": "Argomight",
+      "description": "A Novan Hammer from the very first odyssey of Prism.",
+      "stats": [
+        {
+          "attack": 34
+        },
+        {
+          "attack": 39
+        },
+        {
+          "attack": 47
+        },
+        {
+          "attack": 52
+        },
+        {
+          "attack": 60
+        }
+      ],
+      "bonus": {
+        "critical damage": 10,
+        "percent": true
+      }
     }
   }
 }

@@ -598,6 +598,148 @@
         "attack": 5,
         "percent": true
       }
+    },
+    "BODY_S3": {
+      "part": "BODY",
+      "set": "SET_3",
+      "name": "Soulbound Cuirass",
+      "description": "The wearer will come to trust darkness like a friend.",
+      "stats": [
+        {
+          "physical defence": 30
+        },
+        {
+          "physical defence": 34
+        },
+        {
+          "physical defence": 40
+        },
+        {
+          "physical defence": 44
+        },
+        {
+          "physical defence": 50
+        }
+      ],
+      "bonus": {
+        "magic damage reduction": 5,
+        "percent": true
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 8
+        },
+        {
+          "ranged physical defence": 9
+        },
+        {
+          "ranged physical defence": 10
+        },
+        {
+          "ranged physical defence": 11
+        },
+        {
+          "ranged physical defence": 13
+        }
+      ]
+    },
+    "HEAD_S3": {
+      "part": "HEAD",
+      "set": "SET_3",
+      "name": "Soulbound Helm",
+      "description": "You may hear the faint cries of souls trapped within.",
+      "stats": [
+        {
+          "maximum health": 140
+        },
+        {
+          "maximum health": 160
+        },
+        {
+          "maximum health": 190
+        },
+        {
+          "maximum health": 210
+        },
+        {
+          "maximum health": 240
+        }
+      ],
+      "bonus": {
+        "magic defence": 7,
+        "percent": false
+      }
+    },
+    "BODY_S4": {
+      "part": "BODY",
+      "set": "SET_4",
+      "name": "Argonaut",
+      "description": "The first Prism Humans were led by heroes on an odyssey.",
+      "stats": [
+        {
+          "physical defence": 32
+        },
+        {
+          "physical defence": 37
+        },
+        {
+          "physical defence": 45
+        },
+        {
+          "physical defence": 50
+        },
+        {
+          "physical defence": 58
+        }
+      ],
+      "bonus": {
+        "maximum health": 5,
+        "percent": true
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 8
+        },
+        {
+          "ranged physical defence": 9
+        },
+        {
+          "ranged physical defence": 11
+        },
+        {
+          "ranged physical defence": 13
+        },
+        {
+          "ranged physical defence": 15
+        }
+      ]
+    },
+    "HEAD_S4": {
+      "part": "HEAD",
+      "set": "SET_4",
+      "name": "Argohorns",
+      "description": "The first Novan sailors wore the horns of a Golden Tuffler.",
+      "stats": [
+        {
+          "maximum health": 160
+        },
+        {
+          "maximum health": 185
+        },
+        {
+          "maximum health": 225
+        },
+        {
+          "maximum health": 250
+        },
+        {
+          "maximum health": 290
+        }
+      ],
+      "bonus": {
+        "critical damage": 5,
+        "percent": true
+      }
     }
   }
 }
