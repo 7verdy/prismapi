@@ -213,5 +213,105 @@
         "percent": false
       }
     }
+  },
+  "AREA_2": {
+    "BODY_S1": {
+      "part": "BODY",
+      "set": "SET_1",
+      "name": "Honeycomb Armour",
+      "description": "Withstand tough blows like a bear hungry for anything!",
+      "stats": [
+        {
+          "physical defence": 15
+        },
+        {
+          "physical defence": 17
+        },
+        {
+          "physical defence": 19
+        },
+        {
+          "physical defence": 21
+        },
+        {
+          "physical defence": 23
+        }
+      ],
+      "bonus": {
+        "maximum health": 5,
+        "percent": true
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 4
+        },
+        {
+          "ranged physical defence": 4
+        },
+        {
+          "ranged physical defence": 5
+        },
+        {
+          "ranged physical defence": 5
+        },
+        {
+          "ranged physical defence": 6
+        }
+      ]
+    },
+    "HEAD_S1": {
+      "part": "HEAD",
+      "set": "SET_1",
+      "name": "Bearnoculars",
+      "description": "See through the eyes of a bear hungry for glory!",
+      "stats": [
+        {
+          "maximum health": 75
+        },
+        {
+          "maximum health": 85
+        },
+        {
+          "maximum health": 95
+        },
+        {
+          "maximum health": 105
+        },
+        {
+          "maximum health": 115
+        }
+      ],
+      "bonus": {
+        "attack": 5,
+        "percent": true
+      }
+    },
+    "HAMMER_S1": {
+      "part": "HAMMER",
+      "set": "SET_1",
+      "name": "Claw Hammer",
+      "description": "Claw your way like a bear hungry for sweet victory!",
+      "stats": [
+        {
+          "attack": 17
+        },
+        {
+          "attack": 19
+        },
+        {
+          "attack": 21
+        },
+        {
+          "attack": 23
+        },
+        {
+          "attack": 25
+        }
+      ],
+      "bonus": {
+        "physical defence": 4,
+        "percent": false
+      }
+    }
   }
 }
