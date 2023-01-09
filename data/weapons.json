@@ -162,5 +162,88 @@
         "percent": false
       }
     }
+  },
+  "AREA_2": {
+    "SWORD_S2": {
+      "part": "SWORD",
+      "set": "SET_2",
+      "name": "Vulcan Aegis",
+      "description": "A searing sword, like it was forged by Vul'can himself.",
+      "stats": [
+        {
+          "attack": 20
+        },
+        {
+          "attack": 23
+        },
+        {
+          "attack": 27
+        },
+        {
+          "attack": 30
+        },
+        {
+          "attack": 34
+        }
+      ],
+      "bonus": {
+        "attack": 5,
+        "percent": true
+      }
+    },
+    "SHIELD_S2": {
+      "part": "SHIELD",
+      "set": "SET_2",
+      "name": "Vulcan Aegis",
+      "description": "A scorching shield, like it was forged by Vul'can himself.",
+      "stats": [
+        {
+          "ranged physical defence": 20
+        },
+        {
+          "ranged physical defence": 23
+        },
+        {
+          "ranged physical defence": 27
+        },
+        {
+          "ranged physical defence": 30
+        },
+        {
+          "ranged physical defence": 34
+        }
+      ],
+      "bonus": {
+        "physical defence": 5,
+        "percent": false
+      }
+    },
+    "DAGGERS_S2": {
+      "part": "DAGGERS",
+      "set": "SET_2",
+      "name": "Vulcan Daggers",
+      "description": "A scalding knife, like it was forged by Vul'can himself.",
+      "stats": [
+        {
+          "attack": 18
+        },
+        {
+          "attack": 21
+        },
+        {
+          "attack": 25
+        },
+        {
+          "attack": 28
+        },
+        {
+          "attack": 32
+        }
+      ],
+      "bonus": {
+        "attack": 10,
+        "percent": true
+      }
+    }
   }
 }

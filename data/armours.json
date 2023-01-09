@@ -312,6 +312,77 @@
         "physical defence": 4,
         "percent": false
       }
+    },
+    "BODY_S2": {
+      "part": "BODY",
+      "set": "SET_2",
+      "name": "Vulcan Vest",
+      "description": "A fantastic vest, like it was forged by Vul'can himself.",
+      "stats": [
+        {
+          "physical defence": 21
+        },
+        {
+          "physical defence": 24
+        },
+        {
+          "physical defence": 28
+        },
+        {
+          "physical defence": 31
+        },
+        {
+          "physical defence": 35
+        }
+      ],
+      "bonus": {
+        "maximum health": 5,
+        "percent": true
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 5
+        },
+        {
+          "ranged physical defence": 6
+        },
+        {
+          "ranged physical defence": 7
+        },
+        {
+          "ranged physical defence": 8
+        },
+        {
+          "ranged physical defence": 9
+        }
+      ]
+    },
+    "HEAD_S2": {
+      "part": "HEAD",
+      "set": "SET_2",
+      "name": "Vulcan Helm",
+      "description": "A mighty helmet, like it was forged by Vul'can himself.",
+      "stats": [
+        {
+          "maximum health": 95
+        },
+        {
+          "maximum health": 110
+        },
+        {
+          "maximum health": 130
+        },
+        {
+          "maximum health": 145
+        },
+        {
+          "maximum health": 165
+        }
+      ],
+      "bonus": {
+        "physical defence": 5,
+        "percent": false
+      }
     }
   }
 }
