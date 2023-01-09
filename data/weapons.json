@@ -53,6 +53,33 @@
         "maximum health": 5,
         "percent": true
       }
+    },
+    "DAGGERS_S2": {
+      "part": "DAGGERS",
+      "set": "SET_2",
+      "name": "Fury Daggers",
+      "description": "Be the Alpha Dire Wolf. Wield your ferocious fangs!",
+      "stats": [
+        {
+          "attack": 7
+        },
+        {
+          "attack": 8
+        },
+        {
+          "attack": 9
+        },
+        {
+          "attack": 10
+        },
+        {
+          "attack": 11
+        }
+      ],
+      "bonus": {
+        "critical damage": 10,
+        "percent": true
+      }
     }
   }
 }

@@ -70,6 +70,77 @@
         "ranged physical defence": 3,
         "percent": false
       }
+    },
+    "BODY_S2": {
+      "part": "BODY",
+      "set": "SET_2",
+      "name": "Fury Suit",
+      "description": "Be the Alpha Dire Wolf. Remain unruffled by nature!",
+      "stats": [
+        {
+          "physical defence": 9
+        },
+        {
+          "physical defence": 10
+        },
+        {
+          "physical defence": 11
+        },
+        {
+          "physical defence": 12
+        },
+        {
+          "physical defence": 13
+        }
+      ],
+      "bonus": {
+        "physical defence": 3,
+        "percent": false
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 2
+        },
+        {
+          "ranged physical defence": 3
+        },
+        {
+          "ranged physical defence": 3
+        },
+        {
+          "ranged physical defence": 3
+        },
+        {
+          "ranged physical defence": 3
+        }
+      ]
+    },
+    "HEAD_S2": {
+      "part": "HEAD",
+      "set": "SET_2",
+      "name": "Fury Mane",
+      "description": "Be the Alpha Dire Wolf. Fill your foes with fear!",
+      "stats": [
+        {
+          "maximum health": 45
+        },
+        {
+          "maximum health": 50
+        },
+        {
+          "maximum health": 55
+        },
+        {
+          "maximum health": 60
+        },
+        {
+          "maximum health": 65
+        }
+      ],
+      "bonus": {
+        "critical rate": 5,
+        "percent": true
+      }
     }
   }
 }
