@@ -455,5 +455,78 @@
         "percent": true
       }
     }
+  },
+  "AREA_3": {
+    "BODY_S1": {
+      "part": "BODY",
+      "set": "SET_1",
+      "name": "Crusader's Mail",
+      "description": "The fur protects the wearer from attacks and chafing.",
+      "stats": [
+        {
+          "physical defence": 25
+        },
+        {
+          "physical defence": 28
+        },
+        {
+          "physical defence": 32
+        },
+        {
+          "physical defence": 35
+        },
+        {
+          "physical defence": 39
+        }
+      ],
+      "bonus": {
+        "dodge rate": 10,
+        "percent": false
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 6
+        },
+        {
+          "ranged physical defence": 7
+        },
+        {
+          "ranged physical defence": 8
+        },
+        {
+          "ranged physical defence": 9
+        },
+        {
+          "ranged physical defence": 10
+        }
+      ]
+    },
+    "HEAD_S1": {
+      "part": "HEAD",
+      "set": "SET_1",
+      "name": "Crusader's Helm",
+      "description": "An old, comfortable favourite of many young knights.",
+      "stats": [
+        {
+          "maximum health": 125
+        },
+        {
+          "maximum health": 140
+        },
+        {
+          "maximum health": 160
+        },
+        {
+          "maximum health": 175
+        },
+        {
+          "maximum health": 195
+        }
+      ],
+      "bonus": {
+        "critical rate": 5,
+        "percent": true
+      }
+    }
   }
 }

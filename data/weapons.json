@@ -299,5 +299,34 @@
         "percent": true
       }
     }
+  },
+  "AREA_3": {
+    "DAGGERS_S1": {
+      "part": "DAGGERS",
+      "set": "SET_1",
+      "name": "Knives of the Crusade",
+      "description": "The Crusade Sword, broken and reforged into Knives.",
+      "stats": [
+        {
+          "attack": 23
+        },
+        {
+          "attack": 26
+        },
+        {
+          "attack": 30
+        },
+        {
+          "attack": 33
+        },
+        {
+          "attack": 37
+        }
+      ],
+      "bonus": {
+        "critical rate": 10,
+        "percent": true
+      }
+    }
   }
 }
