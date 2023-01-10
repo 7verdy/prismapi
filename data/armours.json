@@ -1026,6 +1026,77 @@
         "critical damage": 5,
         "percent": true
       }
+    },
+    "BODY_S5": {
+      "part": "BODY",
+      "set": "SET_5",
+      "name": "Kunomochi",
+      "description": "A wonderful garb worn by the Trickster. Has magic pockets full of sweet rice cakes.",
+      "stats": [
+        {
+          "physical defence": 41
+        },
+        {
+          "physical defence": 47
+        },
+        {
+          "physical defence": 57
+        },
+        {
+          "physical defence": 63
+        },
+        {
+          "physical defence": 73
+        }
+      ],
+      "bonus": {
+        "critical damage": 5,
+        "percent": true
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 10
+        },
+        {
+          "ranged physical defence": 10
+        },
+        {
+          "ranged physical defence": 14
+        },
+        {
+          "ranged physical defence": 16
+        },
+        {
+          "ranged physical defence": 18
+        }
+      ]
+    },
+    "HEAD_S5": {
+      "part": "HEAD",
+      "set": "SET_5",
+      "name": "Cunning Cowl",
+      "description": "A cowl worn by the Trickster, allowing him to hide and teleport all over the world.",
+      "stats": [
+        {
+          "maximum health": 205
+        },
+        {
+          "maximum health": 235
+        },
+        {
+          "maximum health": 285
+        },
+        {
+          "maximum health": 315
+        },
+        {
+          "maximum health": 365
+        }
+      ],
+      "bonus": {
+        "critical rate": 5,
+        "percent": true
+      }
     }
   }
 }
