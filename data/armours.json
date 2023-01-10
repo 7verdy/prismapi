@@ -813,6 +813,77 @@
         "maximum health": 5,
         "percent": true
       }
+    },
+    "BODY_S2": {
+      "part": "BODY",
+      "set": "SET_2",
+      "name": "Venomleaf Thorax",
+      "description": "This armour will protect you from the venomous fiends of the wild.",
+      "stats": [
+        {
+          "physical defence": 35
+        },
+        {
+          "physical defence": 40
+        },
+        {
+          "physical defence": 48
+        },
+        {
+          "physical defence": 53
+        },
+        {
+          "physical defence": 61
+        }
+      ],
+      "bonus": {
+        "maximum health": 5,
+        "percent": true
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 9
+        },
+        {
+          "ranged physical defence": 10
+        },
+        {
+          "ranged physical defence": 12
+        },
+        {
+          "ranged physical defence": 13
+        },
+        {
+          "ranged physical defence": 15
+        }
+      ]
+    },
+    "HEAD_S2": {
+      "part": "HEAD",
+      "set": "SET_2",
+      "name": "Venomleaf Head",
+      "description": "This headpiece will heighten your mental capacity against all things toxic.",
+      "stats": [
+        {
+          "maximum health": 185
+        },
+        {
+          "maximum health": 210
+        },
+        {
+          "maximum health": 250
+        },
+        {
+          "maximum health": 275
+        },
+        {
+          "maximum health": 315
+        }
+      ],
+      "bonus": {
+        "maximum health": 5,
+        "percent": true
+      }
     }
   }
 }

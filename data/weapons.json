@@ -599,6 +599,87 @@
         "physical damage reduction": 5,
         "percent": true
       }
+    },
+    "SWORD_S2": {
+      "part": "SWORD",
+      "set": "SET_2",
+      "name": "Venomleaf Blade",
+      "description": "This blade is coated in a toxic poison, burning the flesh of those before you.",
+      "stats": [
+        {
+          "attack": 36
+        },
+        {
+          "attack": 41
+        },
+        {
+          "attack": 49
+        },
+        {
+          "attack": 54
+        },
+        {
+          "attack": 62
+        }
+      ],
+      "bonus": {
+        "attack": 5,
+        "percent": true
+      }
+    },
+    "SHIELD_S2": {
+      "part": "SHIELD",
+      "set": "SET_2",
+      "name": "Leafy Shield",
+      "description": "Despite the name, this shield is not made of leaves but of hardened chitin.",
+      "stats": [
+        {
+          "ranged physical defence": 36
+        },
+        {
+          "ranged physical defence": 41
+        },
+        {
+          "ranged physical defence": 49
+        },
+        {
+          "ranged physical defence": 54
+        },
+        {
+          "ranged physical defence": 62
+        }
+      ],
+      "bonus": {
+        "ranged physical defence": 10,
+        "percent": false
+      }
+    },
+    "DAGGERS_S2": {
+      "part": "DAGGERS",
+      "set": "SET_2",
+      "name": "Venomfangs",
+      "description": "These fangs are coated in a potent poison, capable of downing most beasts.",
+      "stats": [
+        {
+          "attack": 34
+        },
+        {
+          "attack": 39
+        },
+        {
+          "attack": 47
+        },
+        {
+          "attack": 52
+        },
+        {
+          "attack": 60
+        }
+      ],
+      "bonus": {
+        "attack": 10,
+        "percent": true
+      }
     }
   }
 }
