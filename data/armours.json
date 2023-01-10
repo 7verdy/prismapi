@@ -884,6 +884,77 @@
         "maximum health": 5,
         "percent": true
       }
+    },
+    "BODY_S3": {
+      "part": "BODY",
+      "set": "SET_3",
+      "name": "Mistral Armour",
+      "description": "Smite and right the wrongs of the world and those who refuse to believe.",
+      "stats": [
+        {
+          "physical defence": 38
+        },
+        {
+          "physical defence": 43
+        },
+        {
+          "physical defence": 51
+        },
+        {
+          "physical defence": 56
+        },
+        {
+          "physical defence": 64
+        }
+      ],
+      "bonus": {
+        "magic defence": 10,
+        "percent": false
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 10
+        },
+        {
+          "ranged physical defence": 11
+        },
+        {
+          "ranged physical defence": 13
+        },
+        {
+          "ranged physical defence": 14
+        },
+        {
+          "ranged physical defence": 16
+        }
+      ]
+    },
+    "HEAD_S3": {
+      "part": "HEAD",
+      "set": "SET_3",
+      "name": "Mistral Hat",
+      "description": "Smite and sight those who wish to harm all that is good in life.",
+      "stats": [
+        {
+          "maximum health": 180
+        },
+        {
+          "maximum health": 205
+        },
+        {
+          "maximum health": 245
+        },
+        {
+          "maximum health": 270
+        },
+        {
+          "maximum health": 310
+        }
+      ],
+      "bonus": {
+        "magic damage reduction": 5,
+        "percent": true
+      }
     }
   }
 }

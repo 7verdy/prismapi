@@ -680,6 +680,87 @@
         "attack": 10,
         "percent": true
       }
+    },
+    "SWORD_S3": {
+      "part": "SWORD",
+      "set": "SET_3",
+      "name": "Mistral Sword",
+      "description": "Smite and charge through the evil-doers who worship the dark.",
+      "stats": [
+        {
+          "attack": 35
+        },
+        {
+          "attack": 40
+        },
+        {
+          "attack": 48
+        },
+        {
+          "attack": 53
+        },
+        {
+          "attack": 61
+        }
+      ],
+      "bonus": {
+        "attack": 5,
+        "percent": true
+      }
+    },
+    "SHIELD_S3": {
+      "part": "SHIELD",
+      "set": "SET_3",
+      "name": "Mistral Guard ",
+      "description": "Smite and shield yourself from the slithering lies of those who trick and deceive.",
+      "stats": [
+        {
+          "magic defence": 21
+        },
+        {
+          "magic defence": 26
+        },
+        {
+          "magic defence": 34
+        },
+        {
+          "magic defence": 39
+        },
+        {
+          "magic defence": 47
+        }
+      ],
+      "bonus": {
+        "magic defence": 5,
+        "percent": false
+      }
+    },
+    "HAMMER_S3": {
+      "part": "HAMMER",
+      "set": "SET_3",
+      "name": "Mistral Hammer",
+      "description": "Smite and smash all who threaten the holy light of life.",
+      "stats": [
+        {
+          "attack": 39
+        },
+        {
+          "attack": 44
+        },
+        {
+          "attack": 52
+        },
+        {
+          "attack": 57
+        },
+        {
+          "attack": 65
+        }
+      ],
+      "bonus": {
+        "magic damage reduction": 5,
+        "percent": true
+      }
     }
   }
 }
