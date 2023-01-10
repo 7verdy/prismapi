@@ -761,6 +761,87 @@
         "magic damage reduction": 5,
         "percent": true
       }
+    },
+    "SWORD_S4": {
+      "part": "SWORD",
+      "set": "SET_4",
+      "name": "Nightblade",
+      "description": "The blade of The Bloody Burglar. Its thirst for blood is unmistakable.",
+      "stats": [
+        {
+          "attack": 41
+        },
+        {
+          "attack": 47
+        },
+        {
+          "attack": 57
+        },
+        {
+          "attack": 63
+        },
+        {
+          "attack": 73
+        }
+      ],
+      "bonus": {
+        "critical rate": 5,
+        "percent": true
+      }
+    },
+    "SHIELD_S4": {
+      "part": "SHIELD",
+      "set": "SET_4",
+      "name": "Nightbearer",
+      "description": "The shield of The Bloody Burglar. It is tainted by the blood of a hundred victims.",
+      "stats": [
+        {
+          "magic defence": 19
+        },
+        {
+          "magic defence": 25
+        },
+        {
+          "magic defence": 35
+        },
+        {
+          "magic defence": 41
+        },
+        {
+          "magic defence": 51
+        }
+      ],
+      "bonus": {
+        "critical damage": 5,
+        "percent": true
+      }
+    },
+    "DAGGERS_S4": {
+      "part": "DAGGERS",
+      "set": "SET_4",
+      "name": "Nightleeches",
+      "description": "The daggers of The Twins, the two deadliest assassins of the Shadow Corps.",
+      "stats": [
+        {
+          "attack": 38
+        },
+        {
+          "attack": 44
+        },
+        {
+          "attack": 54
+        },
+        {
+          "attack": 60
+        },
+        {
+          "attack": 70
+        }
+      ],
+      "bonus": {
+        "critical rate": 10,
+        "percent": true
+      }
     }
   }
 }

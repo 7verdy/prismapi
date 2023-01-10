@@ -955,6 +955,77 @@
         "magic damage reduction": 5,
         "percent": true
       }
+    },
+    "BODY_S4": {
+      "part": "BODY",
+      "set": "SET_4",
+      "name": "Nightshade",
+      "description": "The vestments of the unholy Shadow Corps, worn by the Evil Executioner.",
+      "stats": [
+        {
+          "physical defence": 39
+        },
+        {
+          "physical defence": 45
+        },
+        {
+          "physical defence": 55
+        },
+        {
+          "physical defence": 61
+        },
+        {
+          "physical defence": 71
+        }
+      ],
+      "bonus": {
+        "attack": 5,
+        "percent": true
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 10
+        },
+        {
+          "ranged physical defence": 11
+        },
+        {
+          "ranged physical defence": 14
+        },
+        {
+          "ranged physical defence": 15
+        },
+        {
+          "ranged physical defence": 18
+        }
+      ]
+    },
+    "HEAD_S4": {
+      "part": "HEAD",
+      "set": "SET_4",
+      "name": "Nightlord",
+      "description": "The crown of the Lord, the banished leader of the Shadow Corps.",
+      "stats": [
+        {
+          "maximum health": 205
+        },
+        {
+          "maximum health": 235
+        },
+        {
+          "maximum health": 285
+        },
+        {
+          "maximum health": 315
+        },
+        {
+          "maximum health": 365
+        }
+      ],
+      "bonus": {
+        "critical damage": 5,
+        "percent": true
+      }
     }
   }
 }
