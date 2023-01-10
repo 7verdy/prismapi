@@ -741,5 +741,78 @@
         "percent": true
       }
     }
+  },
+  "AREA_4": {
+    "BODY_S1": {
+      "part": "BODY",
+      "set": "SET_1",
+      "name": "Springbark Armour",
+      "description": "Embody the wrath of the trees and smite the enemies of the forest.",
+      "stats": [
+        {
+          "physical defence": 32
+        },
+        {
+          "physical defence": 36
+        },
+        {
+          "physical defence": 42
+        },
+        {
+          "physical defence": 46
+        },
+        {
+          "physical defence": 52
+        }
+      ],
+      "bonus": {
+        "physical defence": 10,
+        "percent": false
+      },
+      "hidden-stats": [
+        {
+          "ranged physical defence": 8
+        },
+        {
+          "ranged physical defence": 9
+        },
+        {
+          "ranged physical defence": 11
+        },
+        {
+          "ranged physical defence": 12
+        },
+        {
+          "ranged physical defence": 13
+        }
+      ]
+    },
+    "HEAD_S1": {
+      "part": "HEAD",
+      "set": "SET_1",
+      "name": "Springbark Helm",
+      "description": "Helm the wrath of the trees and smite the enemies of the forest.",
+      "stats": [
+        {
+          "maximum health": 160
+        },
+        {
+          "maximum health": 180
+        },
+        {
+          "maximum health": 210
+        },
+        {
+          "maximum health": 230
+        },
+        {
+          "maximum health": 260
+        }
+      ],
+      "bonus": {
+        "maximum health": 5,
+        "percent": true
+      }
+    }
   }
 }

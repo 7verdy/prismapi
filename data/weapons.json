@@ -571,5 +571,34 @@
         "percent": true
       }
     }
+  },
+  "AREA_4": {
+    "HAMMER_S1": {
+      "part": "HAMMER",
+      "set": "SET_1",
+      "name": "Springbark Axe",
+      "description": "Wield the wrath of the trees and smite the enemies of the forest.",
+      "stats": [
+        {
+          "attack": 35
+        },
+        {
+          "attack": 38
+        },
+        {
+          "attack": 44
+        },
+        {
+          "attack": 48
+        },
+        {
+          "attack": 54
+        }
+      ],
+      "bonus": {
+        "physical damage reduction": 5,
+        "percent": true
+      }
+    }
   }
 }
